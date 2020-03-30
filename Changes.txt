@@ -1,0 +1,92 @@
+	Completed:
+	13/02/27 - 0:27
+[X] fixed oscillating mouse problem when in windowed mode
+[X] added max player count
+[X] added disconnect code for players
+[X] added block placing/removing synchronization
+[X] added nice messages denoting game state upon disconnect
+[X] added recycling of players that have quit
+[X] debug now displays networking info
+[X] fixed screen resolution to correctly detect monitor's resolution when supplied custom resolution is unsupported by the monitor.
+[X] added network map loading
+[X] change background colors according to time of day
+	13/02/28 - 22:53
+[X] consume click added accurately for when the user clicks on the hotbar or in the backpack(when it is opened)
+[X] display large quantities of items >= 1000 as 1K, 2K... etc.
+[X] press escape to cancel typing text into the chat box
+[X] save chat logs out to log file
+[X] improve text color codes (now allows @ that don't have 2 digits after them to be displayed!)
+[X] break long lines of chat into multiple lines
+[X] make the chat background able to be turned off in settings
+	13/03/01 - 20:22
+[X] fix world collision detection from 0 -> max so you can't go through walls.
+[X] implement page up and page down to move the chat currently displaying window up and down. (And End and Home)
+[X] Move blocks definitions to data file instead of being hard-coded
+[X] interpret block definitons from file instead of hard-coded
+[X] implement ability for "Laser Drill"
+[X] player resumes with the items they had equipped when they finished
+[X] Add furniture layer to world voxels and save code
+[X] Added ability to define how long the chatbox auto-displays for (in milliseconds).
+	13/03/04 17:41
+[X] Fixed bug where blocks not currently in inventory (or in backpack) would be destroyed when you tried to pick them up.
+[X] Added ability to pan camera while holding down the ctrl button.
+[X] networked click action on furniture begun
+	13/03/12 22:06
+[X] added all 4 types of furniture triggers: proximity, time, power, click
+[X] added collision detection for placing blocks and for the furniture using a hash table (very efficient)
+[X] world start location
+[X] added protective box around the world spawn point so nothing can be placed there-in that will prevent spawning.
+[X] fixed bug where furniture activated instantly upon being placed.
+[X] added glass to the blocks.
+[X] added sunambience condition to furniture -- returns true when the sun is lighting the tile (fully)
+[X] Networked furniture connections
+	13/03/19 00:49
+[X] added plants
+[X] plants now destructible
+[X] plants give materials specified with chances specified on destruction
+[X] System now displays how many attacks are left on a block until it breaks.
+[X] pieces of plants can be cut off and the replacements will show.
+[X] item display is now synchronized between users
+[X] arm animation when mining blocks/attacking now synchronized between users
+	13/03/20 01:53
+[X] create material crafting system
+	13/03/23 13:18
+[X] angle of repose for sand is 34 degrees... this come out to about 2 sideways blocks for each vertical block... or sand will try to fill up adjacent spots out to 2 to the left or right of the block it sits above.
+
+	to implement:
+[ ] create blueprint for item
+[ ] load/save blueprints for items
+[ ] create item from blueprint
+[ ] create image from item-piece tree
+[ ] hash-check loaded files to confirm playing on the same versions
+[ ] Populate configuration screen/allow to reconfigure
+[ ] intermitant world and character saves
+[ ] world backup auto-recovery
+[ ] actors have life
+[ ] add equipment slots to actors
+[ ] bullets cause damage
+[ ] actors die at no life; respawn at start location (set individually, or in the world)
+[ ] killing things gives experience, destroying vehicles gives experience
+[ ] experience can make actors gain levels
+[ ] levels give more max life, complexity, attributes
+[ ] world generation/choosing screen
+[ ] new body-part images for humanoids
+[ ] create adaptive creature spawning system
+[ ] implement world random building/loot placer (including dungeons!)
+[ ] hold ctrl for 2x2 block placing; show 2x2 green outline where blocks will go
+[ ] fix the flying around the world that occurs sometimes upon passing over threshold on clients
+[ ] create vehicle blueprints
+[ ] load/save blueprints for vehicle
+[ ] create vehicle in garage bay from blueprints
+[ ] use vehicle (get in, turn on, move around, hover, modify, allow to rotate, this will be a small world that contains only a rectangle the size of the vehicle)
+[ ] enter vehicle
+[ ] leave vehicle
+[ ] vehicle warning messages (needs fuel source, needs engine, needs thrusters/wheels, needs command board, needs hatches, needs control setup, insufficient complexity to make)
+[ ] moving vehicle around
+[ ] activating built-in items on vehicle
+[ ] vehicle pilot modes (continue, all stop, land)
+[ ] destroyed vehicle costs credits to repair (assume it was salvaged)
+[ ] admin ban once and ban by IP address
+[ ] server side saved characters option (uses username/password combo); also saves a copy to client PC
+[ ] land owning (can't be modified by others)
+[ ] Euthenia.ini integrity check/generation upon corruption

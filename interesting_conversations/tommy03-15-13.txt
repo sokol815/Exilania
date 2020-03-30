@@ -1,0 +1,534 @@
+Never tell your password to anyone.
+sokol815: snooze?! why?!
+331agentblue is now Online.
+331agentblue: What?
+sokol815: it just said you were snoozing.
+sokol815: so, how is it going?
+331agentblue: It's going well, I'm learning that batteries are needed for the drawbridge to work
+sokol815: que? this is news to me.
+331agentblue: But you made the game...
+sokol815: the drawbridge needs to have a vertical clearance of 10 blocks to be placed, and a horizontal clearance of 10 blocks to be actuated.
+sokol815: a simple click will activate it and requires no power.
+331agentblue: This is interesting, one second.
+sokol815: it also requires a block to be next to the point of actuation... if the block is on the left, it will actuate right. if the block is on the right, it will actuate left
+331agentblue: That's what I just learned, i replaced the battery with dirt
+331agentblue: Double drawbridge
+sokol815: yeah, works pretty well, eh?
+331agentblue: Extremely good level of security
+sokol815: cool, eh?
+sokol815: furniture runs off of a scripting language i created.
+331agentblue: Definitely, you need 2 bridges to  cross my moat
+331agentblue: You created a language?!
+sokol815: it isnt very complicated, but it gets the job done.
+331agentblue: When in comp sci do you learn how to make said language?
+331agentblue: or any language?
+sokol815: comp sci teaches you programming, programming teaches you how to interpret data, making a languade is creating a set of data and an interpreter to go with it.
+sokol815: language*
+331agentblue: doesn't seem too complicated
+sokol815: haha, no it isn't too bad.
+sokol815: if you want to see the language i created, open up the furniture.txt file in the Euthenia folder
+331agentblue: I actually read that...
+sokol815: yeah, just plain text, huh?
+sokol815: and pretty understandable
+331agentblue: if you know where the graph is
+sokol815: the image graph? is that what you are referring to?
+331agentblue: I think so
+sokol815: yeah, I don't think you have a copy of that, do you?
+331agentblue: probably not
+331agentblue: also how will the player create this door? I have not seen any trees...
+sokol815: trees don't exist yet, nor does crafting. I have a lot of work to do, this is like pre-alpha 0.01d
+331agentblue: Wow, but it is very impressive
+sokol815: I'm making the game to be very moddable.
+331agentblue: adding mods?\
+sokol815: yup!
+331agentblue: Sweet! But one question; What exactly is a mod?
+sokol815: a mod is basically any new content that the player wants to add, whether it be new character type definitions, new item piece definitions, new block type definitions, new furniture pieces, new plant types (all of these are mostly implemented already!)
+sokol815: I'm also going to add a building file that will preload buildings into the world.l;
+331agentblue: like deserted buildings or villages?
+sokol815: yeah, for now. there willeventually be NPCs and monsters in the game as well, thoough.
+sokol815: including boss fights!
+sokol815: and the thing I am most excited about is being able to create vehicles from scratch. (including space ships)
+sokol815: and you could make a mining truck, or a tank, or a mech... lots of possibilities
+331agentblue: Will you add a Balrog? And will you be able to change the color scheme of said vehicles?
+sokol815: I'm hoping so about the color scheme.
+sokol815: creatures will all be randomly generated from pre-created parts, so a balrog in theory would be possibl.e
+331agentblue: Are you saying a Zomron(zombie dragon) is possible?
+sokol815: maybe.
+331agentblue: Would the mechs only be able to walk or could one create a flying mech?
+sokol815: it's kind of like the system has pre-created pieces like a dragon tail and wings from a bird and talons on feet that could be connected to horse legs... etc. then it combines them together in possible ways and creates new monsters.
+sokol815: yes to walking and flying!
+331agentblue: and surfing?
+sokol815: uh, not sure about surfing... floating exists, so i guess surfing could, too.
+sokol815: basically, i am just creating the game i always wanted to play.
+331agentblue: This sounds like the best game ever!
+sokol815: i know, right?!
+sokol815: it will include team battles and epic crafting stuff (you build all your own equipment!)
+331agentblue: You can build any weapon?!
+sokol815: yeah, you craft the pre-fab pieces (like a handle, a gun barrel, a rocket launching tube... etc) into a single item, then the item can do things depending on what was incorporeated.
+sokol815: like you could put a grappling hook into your weapon that will let you grab onto someone and reel yourself towards them when you hit a special button like E
+331agentblue: So say you placed a battery and flamethrower head on a sword
+sokol815: hehehe
+sokol815: now you are thinking.
+331agentblue: Lightning fire anyone?
+sokol815: that would probably just end up being battery powered fire, but if you got a laser emitter with a defocuser... lightning!
+331agentblue: Which brings me to the next thing; Major weather?
+sokol815: rain is planned... when it is raining if a drop of rain falls onto a spot, there is a 1/6 chance it will increase the water level of the spot by 1. 100 water in a single spot is a full tile.
+sokol815: I'm thinking about making it interesting too, in that if there is already water in the tile it lands on, it has a 1/2 chance to increase the water level.
+331agentblue: So flooding
+sokol815: and... random lightning strike chances during a rain storm? easy.
+sokol815: yes, flooding is possible.
+331agentblue: Will electricity from batteries, and lightning be transmitted through water, and possibly fry players?
+sokol815: but, there will be power operated pumps that will be able to move water!
+sokol815: no, it is assumed that all furniture is tech-tested and relatively safe (unless it is meant not-to-be)
+sokol815: also, all energy is actually transmitted wirelessly.
+sokol815: so you could feasibly have some sort of trap that electrifies water when activated, shocking people in the touching water.
+331agentblue: Modern moat
+sokol815: haha, yeah.
+sokol815: also, when you build vehicles, you will build them with armor, which becomes their hitpoints (and shields are possible, too) when a vehicle drops to 0 hitpoints, it is flagged destroyed, and all occupants are jettisoned... you then have to go back to your garage (Where you create vehicles) and repair it for a certain cost.
+331agentblue: Would you also be able to domesticate monsters?
+sokol815: naa, domesticating monsters probably won't play much into the game.
+331agentblue: But would you be able to lead them into say a pit of despair?
+sokol815: hahaha, i guess if they were charging at you in a bloody rage, and you then dropped your drawbridge out from underneath them, yes.
+331agentblue: So they will be smart enough not to run off cliffs
+sokol815: I don't know about that... hehehe.
+sokol815: but monsters will dissappear (for the most part) when they get off-screen.
+331agentblue: Will there be resources specific only to monsters, and you must kill them to obtain it?
+sokol815: yes, I feel that sounds reasonable.
+331agentblue: So Dragon skin and bone only from dragonlike creatures
+sokol815: like inside of an advanced bunker may spawn a couple of evil researchers, you have to get into their bunker and steal their tech/kill them to obtain their technology.
+sokol815: yes, that would be so. but this game is not magic, it uses technology as the magic system.
+sokol815: that does not mean that dragons and t-rexs won't exist, though. ;)
+331agentblue: Through specific genetics anything is possible
+sokol815: some furniture will be able to fight you, like if it is given an ammunition source and it has a gun, if you are the enemy, it will track you and shoot at you.
+sokol815: basically, yes. the random number generator will pre-generate monster types in a world, you will then encounter these types of monsters in that world.... two worlds may have completely different types of monster lists generated.
+331agentblue: And will you be able to determine whom it calls friend and foe?
+sokol815: for the most part, everything will be foe, as this game is mostly you vs. the world, but some npc's may be friendly and want to sell you things/ buy things from you.
+sokol815: even some enemies may be spawned in vehicles that they command, which you then must destroy.
+331agentblue: Brilliant!
+sokol815: basically I am really excited about the breadth of action that you can take in this game.
+331agentblue: Could you make a lightning suit if you had the right materials?
+sokol815: like one that protects from lightning?
+331agentblue: And possibly shoots it as well
+sokol815: yup!
+331agentblue: This will be very action intensive, no-one will be able to go afk
+sokol815: only if you turn pvp mode on.
+sokol815: for the most part, it is supposed to be a fun collaborative sandbox game where you just do anything.
+sokol815: and fight epic battles with friends.
+sokol815: like special events may occur such as invasion by a formidable army
+331agentblue: So there will also be a mode where you can just build items without the threat of monsters?
+sokol815: or an alien landing
+331agentblue: Ooh!
+sokol815: nope, no such mode. there will always be threats present. that is part of what makes it fun!
+331agentblue: There is no peaceful
+sokol815: not unless you make an area that is safe.
+331agentblue: Until something spawns in it...
+331agentblue: Then it's a deazth trap
+sokol815: but if you have turretts and other protection devices in said area, those will take care of most things that spawn.
+331agentblue: Also did you see me find your roof?
+sokol815: yes, I saw that picture. good times, eh?
+331agentblue: Very fun, which brings me to will there be other minerals than just the blue and white mineral, and what I presume is steel?
+sokol815: oh yes, I am planning about 120 block types (around 40 of those will be resources)
+sokol815: including things like plutonium so you can manufacture a nuclear power plant to power your crazy space-ship that you created.
+331agentblue: The other 80 will be assorted things like?
+sokol815: yeah, things like concrete, dirt, bricks, glass, sheet metal, reinforced concrete, wood platforms, mud, rocks of various types,...
+331agentblue: Depth will not be a problem
+331agentblue: Will natural disasters occur?
+sokol815: i've been thinking about that, I'm not sure, yet.
+331agentblue: This will be an effective world simulation
+sokol815: that is what I am hoping.
+331agentblue: What is the preset 0 on the version you sent me?
+331agentblue: It looks like a gun
+sokol815: it is the base for a gun.
+sokol815: to create a gun, you have to combine parts together that will act like a "gun"
+sokol815: for instance, if you try to put a pickaxe head on a gun base, it will end up just being like a pickaxe.
+sokol815: but if you put a gun barrel and a pickaxe head on a gun base, it will be a pickaxe that can also fire bullets.
+331agentblue: I see
+331agentblue: ranged and close combat
+sokol815: I'm thinking instead of actually having bullets, they will be a resource like power. for a gun to fire, it must have "ammo" resources, and certain types of weapons take different amounts of "ammo" per shot.
+331agentblue: Would there also be ammo types that are required to kill a monster?
+sokol815: such as different damage types for various armor types? that could be a very fun system, actually.
+331agentblue: The pokemon factor
+sokol815: it is actually as old as spears, arrows and swords.
+331agentblue: electricity on water monsters but not rock monsters like golems
+331agentblue: The combat triangle
+331agentblue: or dodecagon
+sokol815: haha, yeah. that could be interesting. everything has some things it is effective against and some things it is weak against.
+sokol815: and others are just normal.
+331agentblue: That would force characters to carry various types of weapons so they are protected
+sokol815: damage types I have so far, though are things like kinetic, explosive, electric, plasma, lased (e.g. lasers)
+331agentblue: Tesla!
+sokol815: high wattage stuff, like tasers.
+sokol815: (that is basically what tesla would be)
+sokol815: i mean voltage, not wattage
+331agentblue: Okay, what about  underwater breathing apparatus?
+sokol815: yes!
+331agentblue: Will there be level ups or no?
+sokol815: yes, experience is gained by building items and killing things. as you level up, you get points to assign
+sokol815: these points can be put towards jumping higher, breathing underwater longer, more life, life regen, more base in-suit power...
+sokol815: but some things wil interact, like more life makes it so your jump goes lower and you use breath faster underwater.
+331agentblue: Interesting
+sokol815: faster running speed is another attribute
+sokol815: increased melee strength may allow you to deal more damage with certain types of weapons
+sokol815: increased accuracy may do the same with others.
+sokol815: oh! and the all-important attribute is complexity.
+sokol815: you start (currently) with 12 complexity.
+331agentblue: what does it do?
+sokol815: item-pieces have a complexity attribute. e.g. a wooden handle has a complexity of 4, a pickaxe head has a complexity of 6.
+sokol815: you cannot build an item with a higher complexity than you have
+sokol815: so you must increase your complexity count in-order to build more technologically advanced items
+sokol815: (including vehicles!)
+sokol815: like a basic handgun may require about 22 complexity to build, but a spaceship will require somewhere around 2500
+331agentblue: What about items you receive from the evil researchers?
+sokol815: you can use anything you get, but in order to copy it, you must have at least that much complexity
+sokol815: also, deconstructing items of complexity higher than you have gives a chance to increase your complexity, but at the cost of loosing all the pieces that made up the item.
+sokol815: deconstructing an item equal to or below your complexity gives you a chance to recover each piece of the item.
+sokol815: so basically, you examine items of high complexity to find out how they work, what makes them tick
+331agentblue: Sometimes will it be a clock?
+sokol815: and you learn from it.
+sokol815: a clock?
+sokol815: yeah. if you carry a clock in one of your accessory slots, it will give a HUD of the current time (int the world) you will thereafter know what time it is!
+331agentblue: such as a construct could only live as long as the clock inside it is ticking
+sokol815: hmm. that will probably not be an option... a clock's basic only ability is to give you the clock HUD.
+331agentblue: Okay so no kamikaze constructs
+sokol815: but, you could put a self-destruct device in an item. when the item runs out of power, the self destruct device activates and blows itself up.
+sokol815: here, my enemy, here is a gift of 50 plasma rifles!
+331agentblue: Tick tick Ka-boom!
+sokol815: yeah, you shoot it twice and then it explodes!
+sokol815: brilliant.
+sokol815: I am looking forward to combat in this game, how about you?
+331agentblue: That will be amazingly epic
+sokol815: i know, right? i always get so excited when I think about all the stuff I want to add to this game.
+331agentblue: I'm excited jkust chatting with you about it
+sokol815: yeah!
+331agentblue: About how long does it take to create a piece of furniture?
+sokol815: depends on the complexity, for the most part it is about 5 to 10 minutes (including testing)
+sokol815: like the draw bridge took about 10
+331agentblue: What are you working on currently?
+sokol815: but the lights that turn on and off when you click on them, turn off when they have no power, and turn off when they sense that it is daytime, and automatically try to grab energy, and turn off when you walk away from them... those took about 30 minutes.
+sokol815: currently, I am going to add the networking code to make it so when someone connects furniture pieces together on their side, it propogates to the rest of the poeple in the game.
+331agentblue: Everyone else is notified of new items you create?
+sokol815: well, you all have the same pre-shared list of furniture types when you start a game. when you place a furniture piece, it has to propogate to every one else that is currently playing in the same server, otherwise you would have world splits (where your simulation is not what others are simulating and vice-versa) then the same thing needs to be done with other interactions, like if someone clicks on a draw bridge to bring it down, everyone needs to get that message and open the draw bridge.
+sokol815: creating furniture pieces is basically just part of the development of the game (like making art, or adding in other new features) the end game will be released with the same furniture for all of them.
+sokol815: i think this game will be really fun, thouogh because you start out as a cave-man like person who can only make really basic things, and as you grow and find things and learn things, you become able to make more and more advanced items, eventually all the way up to making high-tech gadgets like a backpack that has 2 grappling hooks, jet engine and an air tank in it.
+331agentblue: So it's kinda like spore where you must grow and learn to survive
+sokol815: yeah, in a manner of speaking.
+sokol815: but you never move on to commanding a civilization, it is always just your character (or your ship/vehicle if you build one!)
+331agentblue: Brilliant!
+sokol815: you will be able to move around in your vehicle, or stand at the helm and control it. you can also leave your vehicle, or other people can get into it, too and you can transport them.
+sokol815: I am also thinking it would be cool if a ship or mother vehicle could carry smaller vehicles inside of it.
+331agentblue: So you could conceivably create a transport for you and your team
+sokol815: heck, yes!
+sokol815: and it could have turrets mounted on it that are operated by people inside the vehicle.
+331agentblue: and point defense lasers
+sokol815: and rocket launchers
+331agentblue: The list is endless
+sokol815: firing a rocket, thoough would probably cost something like 150 ammo, whereas firing a machine gun could cost just like 2 ammo per shot.
+sokol815: annnd... if your vehicle runs out of power, it becomes dead in the water.
+sokol815: (so to speak)
+sokol815: unless you have weapons that only require ammo to fire and no power.
+sokol815: but also there are some weapons that only require power to fire and no ammo (like lasers!)
+331agentblue: would you be able to create portals?
+sokol815: yes! teleporters have to be hooked up by (probably) a teleport relay, then you could use some power (probably a large amount and based onthe distance of the teleporters) to beam between the two places.
+331agentblue: Solar panels?
+sokol815: I'm also thinking it would be cool if you could teleport from inside a ship's teleporter to one on the ground, so i might make it so no relay is required, just a specific (huge) amount of power to make a successful teleport.
+sokol815: enough power that it will probably have to be generated by a nuclear reactor (fusion or fission, both will exist!)
+331agentblue: What's the difference btween fusion and fission
+331agentblue: ?
+sokol815: fission is what we use in nuclear reactors today, it is splitting atoms apart.
+sokol815: fusion is much more powerful (thing hydrogen bomb) and is putting atoms together into a larger atom.
+sokol815: think*
+sokol815: for instance, we have hydrogen bombs today, but the only way to begin a fusion reaction (That we know of right now, at least) is to start it with a fission explosion.
+sokol815: )
+331agentblue: so fusion is probably the best choice but iyt will be volatile
+sokol815: the sun uses fusion to make sunlight/energy
+sokol815: yeah, there will be some drawbacks to using such things, what if enemies arrive and capture your power plant?
+331agentblue: They have a super power
+sokol815: but, what if you have a fusion generator on your space ship... then you will have some serious ability to beat people up!
+331agentblue: You could possibly be shooting the full concentrated power of the sun...
+sokol815: or if you build an aircraft carrier, it could have multiple reactors in it...
+331agentblue: Could you build something that requires a whole lot of energy but sends things to a void?
+sokol815: hmm.
+sokol815: probably not, I don't think there will be a physical bridge from one world to another.
+sokol815: but, if you build a spaceship, it will be counted as yours and you will be able to call it into another world.
+331agentblue: anything youi make is at your beck and call?
+331agentblue: Will you have to create larger crafting boards for larger items?
+sokol815: well, when you create something, you save the blue print, so you can easily re-create it later.
+sokol815: the size of your garage will limit the size of a vehicle you can build, so you will have to create a very large garage in order to build a large vehicle like a space ship.
+sokol815: in order to craft something you will have to either have every item on a list of materials, or you will also have to pay a fee to obtain all the other needed parts from outside suppliers (at a significantly higher cost than if you had made the item yourself)
+sokol815: so it will be epic when people are building spaceships, because they will have to first build a garage with all the support pieces (crafting facilities for making spaceship parts, etc.) and then they can build their ship.
+sokol815: and you assemble the first build of a specific ship piece-by-piece.
+sokol815: after that, you can use a cnc machine the size of the whole garage to assemble a blue-print for you.
+sokol815: but you can always bring an individual ship back in and make changes to it.
+331agentblue is now Online.
+331agentblue: Wow
+331agentblue: What's a cnc machine?
+sokol815: it is basically a machine that has an arm which moves around to assemble whatever you need.
+sokol815: in this case, it would have a horizontal track and a vertical track. the assembly arm would move along those two tracks to get to the place it needs to be in order to assemble said vehicle.
+331agentblue: So your garage will basically be a claw game
+sokol815: cause it basically assembles the vehicle piece by piece.
+sokol815: only when it is following a blueprint, when you are first creating the vehicle, you will be running around it adding every piece manually.
+sokol815: (and doing the power hookups and everything)
+sokol815: holy cow this system is going to be awesome!
+331agentblue: It will definitely be a work of art
+sokol815: right?!
+sokol815: I am hoping to get it onto desura (or even steam)
+sokol815: so other people will buy it.
+331agentblue: You will be famous when it takes off
+sokol815: if I can get the game built, maybe.
+sokol815: for instance, terraria? it sold 1.6 million copies (so far) for probably about a total of 12 million dollars.
+sokol815: and terraria was made with the exact same tools i am using.
+331agentblue: What is Terraria?
+331agentblue: I think i've haeard of it
+sokol815: it is a similar 2d sandbox game, look up youtube videos.
+331agentblue: got it
+sokol815: but it is based on magic and has no vehicle crafting system, nor any custom item crafting system, nor any rpg system (besides collecting more hearts/stars to get up to a max amount of mana and health)
+sokol815: the game I am making is a whole other beast.
+sokol815: have you enjoyed beta-testing it so-far?
+331agentblue: Yes! This is awesome!
+sokol815: good deal.
+sokol815: you can be my 2nd official beta tester.
+331agentblue: Steven was the first right?
+sokol815: yup.
+331agentblue: Terraria seems like the yin to this game
+sokol815: haha, yeah. a lot of it was definately inspired by terraria
+331agentblue: But Your game will be better in the respect that it has spaceships
+sokol815: =)
+331agentblue: Along with buildings
+331agentblue: will it also generate dungeons of tech like secret labs
+331agentblue: ?
+sokol815: yep!
+sokol815: those will have to be designed, though,
+331agentblue: Will you be able to create an invisibility cloak for power generators and teleporters to your underground facility?
+sokol815: i've been thinking about personal and ship invisibility cloaks, but probably not world invisibility cloaks... that would be crazy to implement!
+sokol815: there will be forcefields that can push people away, thouogh.
+sokol815: and, anti-grav generators. when you are in their vicinity, you are weightless!
+331agentblue: Not world cloaks but like a cloaking device placed on your reactor and teleporter
+sokol815: that will create some fun arena combat possilbities.
+331agentblue: definitely
+331agentblue: how will the bosses work?
+sokol815: they will be summoned when things happen, like aliens will be signaled to attack as soon as they detect you created an item with at least 100 complexity.
+sokol815: or, when a certain phase of the moon occurs, there will be a chance of an army attacking you
+sokol815: or if you disturb a dungeon, the gaurdian of the dungeon will attack you
+sokol815: or if you do a certain action, it will summon a boss to spawn and attack you.
+331agentblue: So if you havea boss fight you're playing correctly?
+sokol815: basically, yes!
+sokol815: you turn 15 on the 31st, yes?
+sokol815: or 16?
+331agentblue: 15
+sokol815: good deal, dude.
+331agentblue: will there be a small chance that the planets align and the titans come?
+sokol815: anyways, if you ever have any ideas for furniture pieces or item pieces or anything, just let me know. It is good to talk out pieces of the game. Just straight up coding all the time will result in a terrible game, but thinking about everything and purposly implementing pieces results in a well made thing.
+sokol815: haha, that is a possibility.
+sokol815: there are so many of them, it is crazy.
+331agentblue: How long were they building terraria before it was released?
+sokol815: about 6 months
+sokol815: I am in the 1st week of month 3
+sokol815: actually, just started the 2nd week yesterday
+331agentblue: and how many updates have occurred?
+sokol815: hahaha
+sokol815: umm.
+sokol815: let me check.
+sokol815: 56
+331agentblue: That's a lot of programming
+sokol815: yes it is, currently around 15000 lines of code (including ini and .txt files that are interpreted)
+331agentblue: MMO?
+sokol815: no, not really. it is lan-based. max amount of people that might be able to play at once without serious lag issues is probably between 16 and 32.
+sokol815: also, have you tried holding down ctrl while playing the game?
+331agentblue: That's a nice number not oo many to gum up the works and not  too little
+331agentblue: Yes that enables panning
+sokol815: yeah, a 16 vs 16 team battle game would be quite fun.
+331agentblue: It is halpful when building the moat
+sokol815: yes, I bet it is.
+331agentblue: What are you doing right now?
+sokol815: i just rotated my 2nd monitor and discovered that the game runs just fine in 1600 height 1200 width (instead of 1600 width 1200 height)
+sokol815: in fact, it makes the game look huge.
+331agentblue: isn't that ctrl+alt+arrow key?
+sokol815: i have that disabled, i have to go into resolution settings to do the switch.
+331agentblue: Oh ok
+sokol815: yup yup.
+sokol815: did it tell you I went away or anything?
+331agentblue: No not really..
+331agentblue: But I brought the phone to Mom
+331agentblue: This Steam chatting is very convenient
+sokol815: i quite agree.
+sokol815: I'm usually on, so give me a ring if you ever need!
+331agentblue: I'm testing currently whether or not I should fill my moat with water or just thne prospect of spikes...
+sokol815: btw I am saving this chat, it has lots of good discussion in it.
+sokol815: haha, awesome.
+331agentblue: You can save chats?
+sokol815: yeah, right click on the middle of the chat window, click select all, then right click again and select copy.
+331agentblue: And then save it in a notepad
+sokol815: bing!
+sokol815: that's how steven does it, too.
+331agentblue: That's smart
+331agentblue: How long do you think it will be before you have garages and crafting?
+sokol815: crafting within 2 weeks
+sokol815: garages... maybe a month, possibly longer.
+331agentblue: Will grappling hooks be made by attaching your pick to a rope?
+sokol815: right now I want to get the furniture networking squared away, then I can switch to getting plants implemented (starting with trees)
+sokol815: yes, that is the basics of how that would work.
+331agentblue: Amazing
+sokol815: after plants comes crafting (cause plants will introduce a new resource, wood) and to make crafting, I need to create a new array of resources.
+sokol815: so that is more art work and so on and so forth.
+sokol815: I am doing all of the art myself
+sokol815: (except the starry night picture) i just scaled down a scanned copy thereof.
+331agentblue: And you're doing it masterfully I might add
+sokol815: why thank you, sir.
+sokol815: that means a lot.
+sokol815: it's also possible that I will need to have more character stats in existence before i do crafting (like HP, energy, breathing, leveling, other stats)
+331agentblue: When we're in Utah will you be working on this?
+sokol815: yeah, it is pretty much what I do in all my available free-time.
+331agentblue: You are superman
+sokol815: aww shucks, thanks bro!
+331agentblue: You're welcome. Do you know whayitems the people will start out with?
+sokol815: most likely just a pickaxe... hehehe.
+331agentblue: Then when they have built tyheir 50th starship enterprise they will look at everything and say 'I started this with only a pickaxe.'
+sokol815: you know that's right!
+331agentblue: This will be a DIY and Be creative game
+sokol815: yup!
+sokol815: the genre is called sandbox
+331agentblue: And that is what I believe will set it apart from other games
+sokol815: woot!
+sokol815: glad I have your backing on this! it is good to have other sets of eyes on the project
+331agentblue: Glad I could help you create something so awesome
+331agentblue: About how much damage will be dealt to you from falls?
+sokol815: probably about 5 damage per 2 feet over 20 feet (2 feet = 1 block)
+sokol815: your average character begins with 100 life.
+331agentblue: 1 fall into my moat is a K.O.
+sokol815: (or maybe 50... I haven't decided, yet.)
+331agentblue: What is the progression of experience?
+sokol815: my beloved system!
+sokol815: this isn't final numbers, but it is how the level of progression works.
+sokol815: say hitting level 1 takes x experience
+331agentblue: level 2 is x^2
+sokol815: level 2 is 2x experience
+sokol815: level 3 is 3x
+sokol815: level 4 is 4x
+331agentblue: etc. etc.
+sokol815: a nice function (level^2 )* x tells you how much total experience you need to reach a level
+331agentblue: so if it's 10 xp for 1, then 20 for 2, 30 for 3, and 40 for 4?
+sokol815: var level = Math.floor(Math.sqrt(exp/5))+1;
+sokol815: in this case, 5 is x
+sokol815: so having 5 exp means you are level 2
+331agentblue: and is that building a door?
+sokol815: uh, no
+sokol815: Math.floor takes a number like 1.6 or 4.99 and removes all decimals from it (returns 1 for 1.6 and 4 for 4.99)
+sokol815: Math.sqrt takes the square root of a number
+331agentblue: one sec I need to go to the restroom.
+sokol815: oh, I told you wrong, using this equation means it takes 5 exp to reach level 2, 15 more (20 total) to reach level 3, 25 more to reach level 4 (45 total), 25 more to reach level 5 ( 80 total)
+sokol815: so it results in to attain level x you need 10 more exp than it took to reach the last level
+sokol815: 5,15,25,35,45,55,65,75,85,95...
+sokol815: 35 more to reach level 5 (80) *
+331agentblue is now Online.
+331agentblue: I'm back
+331agentblue: It does stack up doesn't it
+sokol815: so to calculate exp needed to get to level y is (y-1)^2 * x; where x = the amount of exp to reach level 1
+sokol815: i mean to get to level 2*
+sokol815: and that progression results in this:
+sokol815: level 10 = 405 exp
+level 20 = 1805
+level 30 = 4205
+level 40 = 7605
+level 50 = 12005
+level 60 = 17405
+level 70 = 23805
+sokol815: (assuming x = 5)
+331agentblue: Hopefully at each of these levels the character has adevanced also
+sokol815: yeah, the game will award you a number of stat points each level, which you then distribute among all the different attributes.
+sokol815: the most important one is of course complexity
+sokol815: level 200 = 198005
+331agentblue: Hopefully with every level up you have you get more than 1 point so that you can upgrade complexity and other things
+sokol815: it will probably end up being like 4 or 5 points. 1 point = 3 complexity, or 4 life... etc.
+sokol815: i will probably end up making it some sort of strange multiplier, thouogh like 13 or 16
+sokol815: (for the amoutn of exp to reach level 2
+sokol815: )
+331agentblue: ok
+331agentblue: So essentially you could have an amazing intellect but very low life
+sokol815: haha, yes!
+sokol815: or jump really high, but be rather short on breath in the water
+sokol815: or have an amazing ability to hold power, but not be very strong otherwise
+331agentblue: ability to hold power? is that like energy?
+sokol815: i am also thinking about not letting you use an item until you have the complexity to make it.
+331agentblue: The dungeon lords concept
+sokol815: yeah, energy (power) that runs lights, and anything else that takes power.
+sokol815: why is that a dungeon lords concept? what is that?
+331agentblue: You can hold it?
+sokol815: every character has a personal reservoir of power (like an on-board battery)
+sokol815: you of course start out with no power.
+sokol815: so stats are: power, power regen, life, life regen, breath, jump height, run speed, complexity
+sokol815: and items you are wearing can augment these numbers.
+sokol815: oh yeah, and melee accuracy, and ranged accuracy are possible other stats, although I don't like them as much because they don't seem as useful.
+sokol815: also, you might be able to spend more stat points on new abilites, like being able to float on water costs 25 stat points
+sokol815: or breathing under water costs 50 stat points
+sokol815: or hardened skin costs an ever increasing number of stat points for each successive level of armor
+sokol815: e.g. -1 dmg reduction costs 6, -2 another 7, -3 another 8, -4 another 9... etc.
+331agentblue: Wow
+331agentblue: That brings me back to another question; Could you create a winged backpack that gives you the power of flight?
+sokol815: yeah, it would probably be through either anti-grav thrusters or jet engines, though.
+331agentblue: are anti-grav thrusters what the spaceships will use
+331agentblue: ?
+sokol815: you might be able to get gliding ability from wings, thouogh.
+sokol815: yes, anti-grav thrusters will be used on space ships, but they will be in a much larger scale
+331agentblue: Fantastic!
+sokol815: e.g. the size of an entire person for just 1 anti-grav device, a spaceship that is 20 blocks wide would probably use at least 2.
+sokol815: but the power usage of a spaceship's anti-grav device would probably be 2 orders of magnitude (or so) higher than that of the personal anti-grav devices.
+sokol815: also, ships will have weight, the amount of power needed to get them moving is based on this weight.
+sokol815: it will be a linear relationship, though
+331agentblue: Would these personal ant-grav devices be able to be attached to your shoes?
+331agentblue: or Boots?
+sokol815: yeah, probably!
+sokol815: things like helmets, backpacks, armor, boots, gloves will have x number of slots in them in which you can place objects (like an anti-grav device) but things you hold in your hand, you actually piece together piece by piece.
+sokol815: or perhaps they will just have a max complexity attribute, allowing you to add things to them up until that complexity level is reached.
+331agentblue: So you could take a helmet and add a flame gun or lightning creator?
+sokol815: well, weapons can only be added to items you carry in your hands (otherwise, how would you fire them?)
+sokol815: because left click is left hand, right click is right hand.
+331agentblue: Well what about a flaming sword that charges and fires lightning?
+sokol815: in that case an item with a melee interaction and a non-melee interaction will require some more thinking... perhaps the non-melee action will occur when holding down alt or something like that.
+sokol815: or, an item that has a melee and a ranged action will take up both left and right hands.
+331agentblue: like the laser drill
+331agentblue: for the non-melee action
+sokol815: you can now de-couple furniture, and if you are hovering over a furniture while pressing q, it will only show connections and text about that piece of furniture.
+331agentblue: So now you can see what makes up something
+sokol815: yup!
+sokol815: it is pretty cool, I must say.
+331agentblue: So what makes up adrawbridge?
+sokol815: oh, when I say de-couple, I mean you can disconnect the two items. for instance if one is sending power to the other one, you can disconnect them and they won't share power anymore.
+331agentblue: So what would a battery affect?
+sokol815: if it is not connected to anything, nothing.
+331agentblue: What can it be connected to?
+sokol815: currently, things that use power are lights or automatic doors (the ones that open when you get close to them)
+331agentblue: Like starship doors
+sokol815: haha, yeah.
+331agentblue: In the finished product will batteries be eternal energy sources?
+sokol815: it will also power electric furnaces, smelters, defense implements, teleporters... etc.
+sokol815: no, batteries only store power from power generation sources like solar panels, engines, reactors...
+331agentblue: So you can make your own batteries?
+sokol815: yes, they will be craftable from a recipe
+sokol815: (like 3 iron, 2 chemicals)
+331agentblue: so there will be more liquids than just water?
+sokol815: well, I have planned water, oil, lava, but chemicals can be obtained from burning a certain kind of readily available rock type you find.
+331agentblue: So the ground will be resource rich
+sokol815: very resource rich. you have to dig through the ground to find the resources you are looking for.
+sokol815: higher tech resources will be located further down in the world.
+331agentblue: This will be awesome
+sokol815: heck yes!
+331agentblue: What are you working on now?
+sokol815: watching hunger games/getting ready to implement plants!
+sokol815: oh, no wait.. I still have to do furniture connections.
+331agentblue: What will that do?
+sokol815: just the networking of furniture connections
+sokol815: so a battery could transfer power to something else and any other way things like that are supposed to work.
+331agentblue: Sweetness
+331agentblue is now Online.
+sokol815: I'm heading off to bed. goodnight, bro1
+331agentblue: Goodnight Greg
+331agentblue: Love you bro!
+sokol815: love you, too.
+331agentblue is now Offline.
+Your state is set to Offline.
+Lost connection to Steam, will rejoin chat automatically when connection regained.
+Connected again and rejoined chat.
+331agentblue is now Snooze.
+sokol815: how is your saturday treating you, sir?
+sokol815: hey bro! just sent you the most recent version (now with a new resource (wood) and trees!)
+sokol815: unfortunately, you can't chop down trees yet, thouogh.

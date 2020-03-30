@@ -1,0 +1,118 @@
+#**********************************************************
+# This file defines pieces that can be used to build items.
+#**********************************************************
+#
+#**********************************************************
+#*********************** Melee Pieces *********************
+#**********************************************************
+#
+# Inheritance of properties only continues until an overriding property is found later down the line... 
+#  E.G. a handle with a jack-hammer tip on it will no longer swing, but follow mouse.
+#
+PIECE:Long Wood Handle
+IMAGE:RECT(1096,150,6,29)
+HAND-ATTACH: 3,23
+ATTACH-POINT:(2,0)
+CLICK:SWING
+DATA:SPEED=200
+DATA:DAMAGE=8
+DATA:RANGE=96
+BREAK-BLOCK:STONE1=16;BRICK1=14;PLATFORM=10;DIRT1=6;MISC=2;WOOD=35;SAND=8;
+#MATERIAL:WOOD=4
+MATERIAL:WOOD=1
+CRAFT-REQUIRE:NONE
+WORTH:20
+COMPLEXITY:4
+#S
+PIECE:Short Wood Handle
+IMAGE:RECT(1106,162,6,15)
+HAND-ATTACH: 1,12
+ATTACH-POINT:(3,0)
+CLICK:SWING
+DATA:SPEED=300
+DATA:RANGE=72
+DATA:DAMAGE=4
+BREAK-BLOCK:STONE1=20;BRICK1=18;PLATFORM=15;DIRT1=10;MISC=2;WOOD=40;SAND=9;
+MATERIAL:WOOD=2
+CRAFT-REQUIRE:NONE
+WORTH:15
+COMPLEXITY:2
+#S
+PIECE:Hammer Head
+IMAGE:RECT(1103,154,9,7)
+ATTACH-POINT:(4,6)
+DATA:DAMAGE=1d6
+#BREAK-BLOCK defines what types of blocks can be broken by this item, and how many swings it takes to break it. the lowest of the numbers in break block takes precedence.
+BREAK-BLOCK:STONE1=6;BRICK1=3;PLATFORM=8;DIRT1=7;MISC=2;WOOD=25;SAND=7;
+MATERIAL:WOOD=1
+#MATERIAL:IRON INGOT=4
+CRAFT-REQUIRE:ANVIL
+WORTH:30
+COMPLEXITY:4
+#S
+PIECE:Heavy Hammer Head
+IMAGE:RECT(1093,139,11,9)
+ATTACH-POINT:(5,9)
+DATA:DAMAGE=2d6
+DATA:SPEED=-50
+BREAK-BLOCK:STONE1=4;BRICK1=2;PLATFORM=7;DIRT1=5;MISC=2;WOOD=20;SAND=6;
+MATERIAL:WOOD=1
+#MATERIAL:IRON INGOT=12
+CRAFT-REQUIRE:ANVIL
+WORTH:40
+COMPLEXITY:8
+#S
+PIECE:Pick-Axe Head
+IMAGE:RECT(1106,145,29,7)
+ATTACH-POINT:(14,6)
+DATA:DAMAGE=1d6
+BREAK-BLOCK:STONE1=3;BRICK1=2;PLATFORM=6;DIRT1=2;MISC=2;WOOD=15;METAL1=4;SAND=4
+MATERIAL:WOOD=1
+#MATERIAL:IRON INGOT=10
+CRAFT-REQUIRE:ANVIL
+WORTH:40
+COMPLEXITY:6
+#S
+PIECE:Axe Head
+IMAGE:RECT(1096,183,15,13)
+ATTACH-POINT:(0,6)
+DATA:DAMAGE=1d6
+#BREAK-BLOCK:STONE1=1;BRICK1=1;PLATFORM=1;DIRT1=1;MISC=2;WOOD=1;METAL1=1;SAND=1;
+BREAK-BLOCK:STONE1=6;BRICK1=5;PLATFORM=4;DIRT1=3;MISC=2;WOOD=14;METAL1=5;SAND=1;
+MATERIAL:WOOD=1
+#MATERIAL:IRON INGOT=10
+CRAFT-REQUIRE:ANVIL
+WORTH:40
+COMPLEXITY:6
+#
+#
+#
+#*********************************************************
+#********************** Gun Pieces ***********************
+#*********************************************************
+#
+#
+PIECE:Gun Handle
+IMAGE:RECT(1113,174,12,11)
+HAND-ATTACH: 7,5
+ATTACH-POINT:(11,3)
+CLICK:FIRE
+#FIRE RATE is in shots per second(it is a float).
+DATA:FIRE-RATE=1.2
+DATA:DAMAGE=6
+MATERIAL:WOOD=1
+#MATERIAL:IRON INGOT=4;Wood=2
+WORTH:80
+COMPLEXITY:16
+#S
+PIECE:Assault-Gun Handle
+IMAGE:RECT(1113,162,16,11)
+HAND-ATTACH: 7,5
+ATTACH-POINT:(15,4)
+CLICK:FIRE
+DATA:FIRE-RATE=2.2;
+MATERIAL:WOOD=1
+#MATERIAL:IRON INGOT=8
+DATA:DAMAGE=9
+WORTH:120
+COMPLEXITY:24

@@ -1,0 +1,3 @@
+Content\Sounds\EutheniaAudio.xgs
+Content\Sounds\Stirkes.xwb
+Content\Sounds\Sound Bank.xsb

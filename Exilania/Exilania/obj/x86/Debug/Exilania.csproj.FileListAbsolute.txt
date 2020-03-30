@@ -1,0 +1,25 @@
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Exilania.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\planet8152012.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Exilaniatitle.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\pointlights.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Corbel_Big.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Constantia_twenty.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Lucida_Tiny.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\LightShader.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\None.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\hit.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\finish_hit.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\ExilaniaAudio.xgs
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\Stirkes.xwb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\Sound Bank.xsb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Exilania.exe
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Exilania.pdb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Lidgren.Network.dll
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Lidgren.Network.pdb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Lidgren.Network.xml
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\obj\x86\Debug\Exilania.exe
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\obj\x86\Debug\Exilania.pdb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\background.xnb
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\door_change.xnb

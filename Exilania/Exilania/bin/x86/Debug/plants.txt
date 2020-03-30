@@ -1,0 +1,100 @@
+Name: Tree
+Drops: WOOD(100), Tree Seed(10)
+Piece: Leaves=3,3|(470,471,472,502,503,504,534,535,536)
+Piece: Trunk=1,4-13|RAND(567,599,631,663,695,727,759,791,823,855,887)
+Piece: Base=1,1|RAND(919,920)
+Piece: CutTrunk=1,1|RAND(886,854,822,790,856)
+Piece: CutBase=1,1|RAND(918,888)
+Anatomy: Leaves,Trunk,Base
+GrowsOn: Grass
+Behavior-Cut:Above-Destroy
+min-distance:96
+#per 100 horizontal blocks, how many of these will appear?
+density:26
+break-below:false
+auto-spawn:false
+material:WOOD
+Growth:30/100=Height
+Extreme-Height:30
+
+Name: Sapling
+Piece: Plant=1,3|(568,600,632)
+Anatomy: Plant
+GrowsOn: Grass
+Behavior-Cut:Destroy
+min-distance:80
+Material:MISC
+density:5
+below-block-remove:true
+auto-spawn:false
+Growth:3/100=Tree
+
+Name: Vine
+Drops: Vine Rope(40)
+Piece: Stem=1,2|(755,787)
+Anatomy: Stem
+GrowsOn: Grass
+Behavior-Cut:Destroy
+min-distance:96
+#per 100 horizontal blocks, how many of these will appear?
+density:16
+below-block-remove:true
+auto-spawn:true
+
+Name: Red Posy
+Drops: Red Dye(100)
+Piece: Stem=1,2|(660,692)
+Anatomy: Stem
+GrowsOn: Grass
+Behavior-Cut:Destroy
+min-distance:96
+#per 100 horizontal blocks, how many of these will appear?
+density:6
+below-block-remove:true
+auto-spawn:true
+
+Name: Desert Flower
+Drops: 
+Piece: Stem=1,1|(957)
+Anatomy: Stem
+GrowsOn: Sand
+Behavior-Cut:Destroy
+min-distance:96
+#per 100 horizontal blocks, how many of these will appear?
+density:6
+below-block-remove:true
+auto-spawn:true
+
+Name: Cotton Seedling
+Drops:
+Piece: Stem=1,2|(308,340)
+Anatomy: Stem
+GrowsOn: Dirt,Grass
+Behavior-Cut:Destroy
+density:2
+below-block-remove:true
+auto-spawn:true
+Material:MISC
+Growth:10/100=Cotton Plant
+
+Name: Cotton Plant
+Drops:
+Piece: Stem=1,2|(307,339)
+Anatomy: Stem
+GrowsOn: Dirt,Grass
+Behavior-Cut:Destroy
+density:0
+below-block-remove:true
+auto-spawn:false
+Material:Misc
+Growth:10/100=Mature Cotton
+
+Name: Mature Cotton
+Drops: Seeded Cotton(90)
+Piece: Stem=1,2|(306,338)
+Anatomy: Stem
+GrowsOn: Dirt,Grass
+Behavior-Cut:Destroy
+density:0
+below-block-remove:true
+auto-spawn:false

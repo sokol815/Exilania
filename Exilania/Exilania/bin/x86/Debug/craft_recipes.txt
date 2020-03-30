@@ -1,0 +1,70 @@
+Name:Grey Brick
+Output: Grey Brick(2)
+Input: Stone(1)
+complexity:4
+
+Name:Red Brick
+Output: Red Brick(10)
+Input: Red Dye(1)
+Input: Grey Brick(10)
+complexity:4
+
+Name: Refined Cotton
+Output: Refined Cotton(1),Cotton Seeds(1)
+Input: Seeded Cotton(1)
+complexity:4
+
+Name:Wood Platform
+Output: Wood Platform(4)
+Input: Wood(1)
+complexity:4
+
+Name:Chemicals
+Output: Chemicals(1),Stone(1)
+Input: Mettite(2)
+complexity:4
+
+Name:Iron Ingot
+Output: Iron Ingot(1)
+Input: Wood(1),Hematite(3)
+furniture-require:furnace
+complexity:10
+
+Name:Glass
+Output: Glass(10)
+Input: Sand(10),Wood(1)
+furniture-require:furnace
+complexity:10
+
+Name:Rosy Glass
+Output: Rosy Glass(10)
+Input: Sand(10),Wood(1),Red Dye(1)
+furniture-require:furnace
+complexity:10
+
+Name:Torch
+Output:Torch(3)
+Input: Wood(2),Vine Rope(1)
+complexity:10
+
+Name:Concrete
+Output:Concrete(5)
+Input: Dirt(1),Water(2),Chemicals(1),Stone(1)
+complexity:10
+
+Name:Gun Steel
+Output:Gun Steel(5)
+Input: Iron Ingot(1),Wood(1)
+furniture-require:furnace
+complexity:10
+
+Name:Sand Stone
+Output:Sand Stone(10)
+Input:Sand(10)
+#furniture-require:anvil
+complexity:10
+
+Name:Computer Board
+Output:Computer Board(1)
+Input:Sand(10),Iron Ingot(1),Chemicals(3)
+furniture-require:furnace

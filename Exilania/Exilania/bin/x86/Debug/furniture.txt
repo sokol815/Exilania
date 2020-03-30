@@ -1,0 +1,333 @@
+#triggers use something that is like basic. this allows them to be readable and flexible enough to work however is needed
+#first, a check is made to see if there is an overall if applied to the whole statement, this allows you to prevent lengthy checks if unnecessary
+# statements are all interpreted one after another until an instance of END is reached.
+# a statement does not have to begin with an IF, it can simply have something like togglestate(0,1), END;
+# if an IF is found, the system goes into the if engine until a THEN is found.
+# items with parenthesis are checked for truth on the IF side, and modified otherwise.
+# commas are not necessary, as the system is broken up by spaces.
+# semicolons denote the completion of a single line of related commands. 
+# A trigger is firt broken up by semi-colons, then each command is broken up by spaces.
+# only parenthesis are used, squiggly brackets are unsupported.
+# a command must not have any spaces in it, that will cause it to be misinterpreted, and most likely cause an error
+#if changing size from smaller to bigger, you must move the object before you 
+#Furniture declaration file.
+
+
+
+FPiece:Wood Door
+Click:
+	play(slamdoor);
+	IF standtoright AND state(0) AND free(xloc-1) THEN xloc(-1), passable(true), state(1), END; 
+	IF standtoleft AND state(0) AND free(xloc+1) THEN passable(true), state(2),  END;	
+	IF state(1) AND standtoside THEN passable(false), state(0), xloc(1),  END;
+	IF state(2) AND standtoside THEN passable(false), state(0), END;
+EndClick
+Worth:40
+Materials:WOOD=3
+Image:0=1,4|(948,980,980,1012);1=2,4|(946,947,978,979,978,979,1010,1011);2=2,4|(949,950,981,982,981,982,1013,1014)
+passable:false
+state_item_draw:2
+break-below:false
+complexity:10
+
+
+FPiece:Painting
+Click:
+	advancestate;
+EndClick
+Worth:500
+Materials:WOOD=4
+Image:0=3,2|(846,847,848,878,879,880);1=3,2|(911,912,913,943,944,945);2=3,2|(908,909,910,940,941,942)
+complexity:16
+
+FPiece:Chest
+Click:
+	openchest() END;
+EndClick
+Worth:50
+is-chest:true
+Materials:WOOD=4;IRON INGOT=3;
+Image:0=2,2|(983,984,1015,1016);1=2,2|(951,952,1015,1016)
+break-below:false
+complexity:8
+
+FPiece:Draw Bridge
+Click:
+	IF state(0) AND !free(placexloc-1,placeyloc,1,1) AND free(placexloc,placeyloc,1) THEN state(placexloc,placeyloc,1) END;
+	IF state(0) AND !free(placexloc+1,placeyloc,1,1) AND free(placexloc-9,placeyloc,1) THEN state(placexloc-9,placeyloc,1) END;
+	IF state(1) AND free(placexloc,placeyloc-9,0) THEN state(placexloc,placeyloc-9,0) END; 
+EndClick
+#Time:
+#	IF state(0) AND !free(placexloc-1,placeyloc,1,1) AND free(placexloc,placeyloc,1) THEN state(placexloc,placeyloc,1) END;
+#	IF state(0) AND !free(placexloc+1,placeyloc,1,1) AND free(placexloc-9,placeyloc,1) THEN state(placexloc-9,placeyloc,1) END;
+#	IF state(1) AND free(placexloc,placeyloc-9,0) THEN state(placexloc,placeyloc-9,0) END;
+#EndTime
+#setTimeout:500
+Worth:40
+Materials:WOOD=3
+Image:0=1,10|(947,979,979,979,979,979,979,979,979,1011);1=10,1|(947,979,979,979,979,979,979,979,979,1011);2=1,3|(947,979,1011)
+passable:false
+state_item_draw:2
+break-below:false
+complexity:20
+
+FPiece:Mark 10 Battery
+Worth:90
+Power:
+	state((1000-power_storage)/250);
+	IF !power(max_power_storage) AND connection(powersource) THEN takepower(5) END;
+EndPower
+Materials:Iron Ingot=2;Chemicals=1
+craft-require:anvil
+Image:0=1,1|(818);1=1,1|(819);2=1,1|(820);3=1,1|(821);4=1,1|(786)
+passable:true
+state_item_draw:0
+power_capacity:1000
+cur_power:100
+share_power:60
+complexity:24
+
+FPiece:Metal Door
+Proximity:
+#state 0 = door is closed
+#state 1 = door is open
+	IF state(0) AND power(2) AND enterproximity(48,anyone) THEN usepower(2) passable(true) state(1) play(slamdoor) END;
+	IF state(1) AND leaveproximity(48,anyone) THEN passable(false) state(0) play(slamdoor) END;
+	IF state(1) AND !connection(proximity) THEN passable(false) state(0) END;
+EndProximity
+Power:
+	IF !power(max_power_storage) AND connection(powersource) THEN takepower(max) END;
+EndPower
+Worth:200
+power_capacity:6
+cur_power:6
+Materials:Iron Ingot=5
+craft-require:anvil
+Image:0=1,3|(725,757,789);1=1,3|(724,756,788)
+passable:false
+state_item_draw:0
+break-below:false
+complexity:50
+
+FPiece:Lab Light
+Click:
+	IF state(0) THEN state(2) light(0,0,0) END;
+	IF state(2) AND power(1) THEN state(0) light(100,110,120) END;
+EndClick
+Proximity:
+	IF state(1) AND power(1) AND !sunambience AND enterproximity(720,anyone) THEN state(0) light(100,110,120) END;
+	IF state(0) AND leaveproximity(720,anyone) THEN state(1) light(0,0,0) END;
+	IF state(0) AND enterproximity(720,anyone) END;
+EndProximity
+Time:
+	IF state(0) THEN usepower(1d2-1);
+	IF state(0) AND !power(1) THEN state(1) light(0,0,0) END;
+	IF state(0) AND sunambience THEN state(1) light(0,0,0) END;
+	IF state(1) AND connection(proximity,1) AND !sunambience AND power(1) THEN state(0) light(100,110,120) END;
+EndTime
+Power:
+	IF !power(max_power_storage) AND connection(powersource) THEN takepower(max) END;
+EndPower
+Worth:50
+settimeout:2000
+power_capacity:20
+share_power:50
+cur_power:20
+light_source:100,110,120
+Materials:Iron Ingot=3;Chemicals=4;
+craft-require:anvil
+Image:0=1,1|(977);1=1,1|(881);2=1,1|(881)
+complexity:24
+
+FPiece:Solar Panel
+Time:
+	IF sunambience AND !power(max_power_storage-3) THEN usepower(-3) END;
+	IF sunambience AND !power(max_power_storage) THEN usepower(-1) END;
+EndTime
+Worth:140
+settimeout:2000
+power_capacity:200
+cur_power:0
+Materials:Iron Ingot=8;GLASS=24;CHEMICALS=4;
+craft-require:furnace
+Image:0=12,2|(154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154,154);1=1,1|(154)
+share_power:100
+state_item_draw:1
+complexity:24
+
+FPiece:Super Capacitor
+Worth:900
+Power:
+	state((100000-power_storage)/12500);
+	IF !power(max_power_storage) AND connection(powersource,1) THEN takepower(max) END;
+EndPower
+Materials:Iron Ingot=20;Chemicals=100
+craft-require:anvil
+Image:0=1,1|(985);1=1,1|(986);2=1,1|(987);3=1,1|(988);4=1,1|(989);5=1,1|(1017);6=1,1|(1018);7=1,1|(1019);8=1,1|(1020)
+passable:true
+state_item_draw:0
+power_capacity:100000
+cur_power:0
+share_power:80
+complexity:80
+
+FPiece:Utility Light
+Click:
+	IF state(0) THEN state(2) light(0,0,0) END;
+	IF state(2) AND power(1) THEN state(0) light(120,120,100) END;
+EndClick
+Proximity:
+	IF state(1) AND power(1) AND !sunambience AND enterproximity(720,anyone) THEN state(0) light(120,120,100) END;
+	IF state(0) AND leaveproximity(720,anyone) THEN state(1) light(0,0,0) END;
+	IF state(0) AND enterproximity(720,anyone) END;
+EndProximity
+Time:
+	IF state(0) THEN usepower(1);
+	IF state(0) AND !power(1) THEN state(1) light(0,0,0) END;
+	IF state(0) AND sunambience THEN state(1) light(0,0,0) END;
+	IF state(1) !power(max_power_storage) AND eval(1d5=1) THEN usepower(-1);
+	IF state(1) AND connection(proximity,1) AND !sunambience AND power(1) THEN state(0) light(120,120,100) END;
+EndTime
+Power:
+	IF !power(max_power_storage) AND connection(powersource) THEN takepower(max) END;
+EndPower
+Worth:50
+settimeout:2000
+power_capacity:50
+share_power:50
+cur_power:50
+light_source:120,120,100
+Materials:Iron Ingot=3;Chemicals=2;
+craft-require:anvil
+Image:0=1,1|(976);1=1,1|(849);2=1,1|(849)
+complexity:24
+
+FPiece:Metal Hatch
+Proximity:
+#state 0 = hatch is closed
+#state 1 = hatch is open
+	IF state(0) AND power(2) AND enterproximity(60,anyone) THEN usepower(2) passable(true) state(1) play(slamdoor) END;
+	IF state(1) AND leaveproximity(60,anyone) THEN state(0) passable(false) play(slamdoor) END;
+	IF state(1) AND !connection(proximity,1) THEN state(0) passable(false) END;
+EndProximity
+Power:
+	IF !power(max_power_storage) AND connection(powersource) THEN takepower(max) END;
+EndPower
+Worth:200
+power_capacity:6
+cur_power:6
+Materials:Iron Ingot=5
+craft-require:anvil
+Image:0=2,1|(722,723);1=2,1|(690,691)
+passable:false
+state_item_draw:0
+break-below:true
+complexity:50
+
+FPiece:Furnace
+Proximity:
+	IF state(0) AND enterproximity(180,anyone) THEN state(1) light(80,80,80) END;
+	IF state(1) AND leaveproximity(180,anyone) THEN state(0) light(0,0,0) END;
+	IF state(1) AND !connection(proximity,1) THEN state(0) light(0,0,0) END;
+EndProximity
+Worth:50
+Materials:Stone=16
+Image:0=4,4|(370,371,372,373,402,403,404,405,434,435,436,437,466,467,468,469);1=4,4|(498,499,500,501,530,531,532,533,562,563,564,565,594,595,596,597)
+passable:true
+state_item_draw:1
+break-below:false
+complexity:12
+
+FPiece:Anvil
+Worth:120
+Materials:Iron Ingot=10;Wood=2
+Image:0=2,2|(921,922,953,954)
+passable:true
+complexity:12
+
+FPiece:Liquid Pump
+Power:
+	IF state(1) AND eval(1d6=1) THEN usepower(1);
+	IF state(1) AND power(1) AND connection(LiquidPumpTo) AND liquid(right,10) AND cantransferliquid(thisright,destright,10) THEN liquidtransfer(thisright,destright) END;
+	IF !power(max_power_storage) AND connection(powersource) THEN takepower(max) END;
+EndPower
+Click:
+	advancestate;
+EndClick
+Worth:200
+Materials:Iron Ingot=6;Chemicals=2
+Image:0=2,1|(923,924);1=2,1|(925,924)
+passable:true
+cur_power:10
+connectiontype:LiquidPumpTo
+settimeout:300
+power_capacity:10
+state_item_draw:0
+complexity:30
+
+FPiece:Liquid Outlet
+Worth:200
+Materials:Iron Ingot=6;Chemicals=2
+Image:0=2,1|(891,892);1=2,1|(893,892)
+connectiontype:LiquidPumpFrom
+passable:true
+complexity:30
+
+FPiece:Transporter Pad
+Worth:600
+Proximity:
+	IF enterproximity(56,anyone) THEN END;
+	IF leaveproximity(56,anyone) THEN END;
+EndProximity
+Power:
+	IF !power(max_power_storage) AND connection(powersource) THEN takepower(max) END;
+EndPower
+Click:
+	IF power(20) AND countactivetransporters(1,6000) AND connection(proximity,1) THEN transport(proximity,6000,Transporting!) usepower(20) END;
+	IF !connection(proximity,1) THEN advancestate END;
+EndClick
+power_capacity:50
+state_item_draw:0
+Materials:Iron Ingot=5;Chemicals=2;Glass=4;
+Image:0=3,1|(859,860,831);1=3,1|(863,860,861)
+passable:false
+complexity:50
+
+FPiece:Banner
+Worth:20
+Click:
+	advancestate;
+EndClick
+state_item_draw:0
+Materials:Refined Cotton=4;Red Dye=2
+passable:true
+complexity:20
+Image:0=2,3|(539,540,571,572,603,604);1=2,3|(537,538,569,570,601,602);2=2,3|(633,634,665,666,697,698);3=2,3|(635,636,667,668,699,700);4=2,3|(731,732,763,764,795,796);5=2,3|(729,730,761,762,793,794)
+
+FPiece:Wheel
+Worth:20
+state_item_draw:0
+Materials:Refined Cotton=4;Iron Ingot=1;Chemicals=2;Wood=2
+passable:false
+complexity:20
+Image:0=1,1|(828)
+#	  size|images		| attach point relative to furniture center | [ center of rotation on facet |]  what type of rotation
+Facet:2,2|(990,991,1022,1023)|0,-12|ROTATECWMEDIUM
+
+FPiece:Console
+Worth:120
+state_item_draw:0
+Materials:Gun Steel=4;Iron Ingot=1;Chemicals=2;Computer Board=1;
+passable:false
+complexity:20
+Image:0=1,2|(797,829)
+
+FPiece:Combustion Engine
+Worth:300
+state_item_draw:0
+Materials:Gun Steel=4;Iron Ingot=2;Chemicals=3;Computer Board=1;
+passable:false
+complexity:30
+Image:0=2,1|(766,767)
+Facet:1,1|(765)|-14,-2|ROTATECWMEDIUM
+Facet:1,1|(765)|14,-2|ROTATECWMEDIUM

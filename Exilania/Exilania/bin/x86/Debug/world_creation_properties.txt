@@ -1,0 +1,109 @@
+WorldTypeName:Small World (3200 x 1250)
+Description: This is a small world that has a standard distribution of resources.
+Width:3200
+Height:1250
+DayLength:600
+NightPercentLength:.4f
+WorldGravity:1.0f
+BaseGround:Dirt
+BaseBackround:Dirt
+BaseGroundTop:Grass
+BaseLiquid:Water
+#this tends to turn the western slope of anything into diagonal lines.
+GroundSmoothIterations:2
+AtmosphereStart:.15f
+SeaLevel:.25f
+Underground1:.5f
+Underground2:.75f
+Core:1200
+GroundVariance:.125f
+#NOTE: the above 2 values mean there is a slight overlap in terrain that will be generated and the area of no atmosphere.
+#GroundVarianceSpeed:(190,0,2|60,1|10,3|10,5|45,2|3,0,10|3,10|5,2,100|5,0,100)
+GroundVarianceSpeed:(190,0,6|40,1,2|40,2,2|30,3,2|15,10)
+#GroundVarianceSpeed:(190,0,2|60,1|10,3|10,5|45,2|3,0,3|3,7|2,0,100|2,2,25|2,2,35|2,3,10|2,5,5|4,10,3)
+#the below uses: <<ABSAltitudeDiff>>,<<Chance Reverse>>
+GroundReverseChanceThreshold:(.1f,.15f|.45f,.6f|.8f,.9f)
+#When the curwidth is modded by the number defined below, if it == 0, it checks the groundReverseChanceThreshold Only called right before groundvariancespeed
+ModTestGroundReverseChance:30
+Resource:CLEAR;LodeSize(1800);MinDepth(0f);MaxDepth(1f);Concentration(LOW,2);Incidence(.0125f);Priority(1)
+Resource:Stone;LodeSize(70,MoreDepth,5);MinDepth(0f);MaxDepth(.9f);Concentration(LINEAR);Incidence(.029f);Priority(0)
+Resource:Mettite;LodeSize(15);MinDepth(0f);MaxDepth(.6f);Concentration(LOW,2);Incidence(.0025f);Priority(1)
+Resource:Hematite;LodeSize(15);MinDepth(0f);MaxDepth(.6f);Concentration(LOW,2);Incidence(.0025f);Priority(1)
+SeaProperties:NumSeas(1);SeaDepth(200);SeaWidth(600);SeaBed(Sand,30);Beach(Sand,100)
+Biome:Desert;Sand;Instances(2);Width(.10f);Depth(.05f)
+Lakes:NumLakes(20);LodeSize(400);Method(Rays);MinDepth(.25f);MaxDepth(.90f)
+#direction switch will lock in the direction it is currently moving for x moves.
+Caves:NumCaves(10);LodeSize(600);Method(WeighDownDrunkenWalk,4,10);DirectionSwitch(5,50|20,10|2,80)
+EndWorldType
+
+WorldTypeName:Test World (300 x 300)
+Description: This is a small world that has a standard distribution of resources.
+Width:300
+Height:300
+DayLength:600
+NightPercentLength:.4f
+WorldGravity:1.0f
+BaseGround:Dirt
+BaseBackround:Dirt
+BaseGroundTop:Grass
+BaseLiquid:Water
+#this tends to turn the western slope of anything into diagonal lines.
+GroundSmoothIterations:2
+AtmosphereStart:.15f
+SeaLevel:.25f
+Underground1:.5f
+Underground2:.75f
+Core:250
+GroundVariance:.125f
+#NOTE: the above 2 values mean there is a slight overlap in terrain that will be generated and the area of no atmosphere.
+GroundVarianceSpeed:(100,0,300)
+#GroundVarianceSpeed:(190,0,2|60,1|10,3|10,5|45,2|3,0,10|3,10|5,2,100|5,0,100)
+#GroundVarianceSpeed:(190,0,6|40,1,2|40,2,2|30,3,2|15,10)
+#GroundVarianceSpeed:(190,0,2|60,1|10,3|10,5|45,2|3,0,3|3,7|2,0,100|2,2,25|2,2,35|2,3,10|2,5,5|4,10,3)
+#the below uses: <<ABSAltitudeDiff>>,<<Chance Reverse>>
+GroundReverseChanceThreshold:(.1f,.15f|.45f,.6f|.8f,.9f)
+#When the curwidth is modded by the number defined below, if it == 0, it checks the groundReverseChanceThreshold Only called right before groundvariancespeed
+ModTestGroundReverseChance:30
+#Resource:CLEAR;LodeSize(1800);MinDepth(0f);MaxDepth(1f);Concentration(LOW,2);Incidence(.0125f);Priority(1)
+Resource:Stone;LodeSize(70,MoreDepth,5);MinDepth(0f);MaxDepth(.9f);Concentration(LINEAR);Incidence(.029f);Priority(0)
+Resource:Mettite;LodeSize(15);MinDepth(0f);MaxDepth(.6f);Concentration(LOW,2);Incidence(.0025f);Priority(1)
+Resource:Hematite;LodeSize(15);MinDepth(0f);MaxDepth(.6f);Concentration(LOW,2);Incidence(.0025f);Priority(1)
+#SeaProperties:NumSeas(1);SeaDepth(200);SeaWidth(600);SeaBed(Sand,30);Beach(Sand,100)
+Biome:Desert;Sand;Instances(2);Width(.10f);Depth(.05f)
+Lakes:NumLakes(20);LodeSize(400);Method(Rays);MinDepth(.25f);MaxDepth(.90f)
+#direction switch will lock in the direction it is currently moving for x moves.
+#Caves:NumCaves(10);LodeSize(600);Method(WeighDownDrunkenWalk,4,10);DirectionSwitch(5,50|20,10|2,80)
+EndWorldType
+######################################################################
+######################################################################
+################### Ground Variance Definition #######################
+######################################################################
+######################################################################
+#GroundVarianceSpeed:()
+	#this defines the chance that the ground will vary between one tile and the next. | separates each individual chance.
+	#<<chance>>:<<tileheightvariance>>[:<<lockouttime>>]
+	#adding a lockout time results in the ground doing what it chose that one time over and over until lockout time blocks have been done.
+	#the system starts by trying to go up, when it hits the topmost extreme, it starts going down, when it hits the bottom, it switches directions again.. roller coaster much?
+
+
+######################################################################
+######################################################################
+###################### RESOURCE DISTRIBUTION #########################
+######################################################################
+######################################################################
+#LodeSize() can be just the number, or it can also include a depth size specifier
+	#the first number specifies the size of each deposit. A random walk function is used to create the deposits.
+	#MoreDepth = increases linearly with depth : <<NUM>> specifies how many times bigger  the size is at the bottom
+	#LessDepth = decreases linearly with depth : <<NUM>> specifies how many times smaller the size is at the bottom
+
+#Concentration() controls the chance a deposit will occur in relation to depth.
+	#LINEAR = concentrations are equally as likely to occur anywhere
+	#LOW:<<NUM>> = rolls are made <<NUM>> times and the lowest chosen, this results in a vast majority of the deposits being in the lower values
+	#HIGH:<<NUM>> = rolls are made <<NUM>> times and the highest chosen, results in a vast majority of the deposits being in the higher values
+
+#PIncidence(<<NUM1>>)
+	#<<NUM1>> (can be between 0f and 1f OR an integer) defines the multiplier for # of blocks of this type in the bounds of the world it can populate (specified by MinDepth and MaxDepth).
+	#This number is multiplied with the width of the world, and height of the MinDepth-MaxDepth zone, resulting in how many blocks must be reached before this resource terminates trying to populate.
+	#e.g. PercentIncidence(.05) in a world of 2000 x 1000  With MinDepth(.26f) and MaxDepth(.90f) would result in 5% of the 64% allocated to this zone in the world become this block type (64,000 blocks)
+
+#Priority(<<NUM>>) - specifies what blocks take precedence over these blocks. the block with the higher priority takes the spot.

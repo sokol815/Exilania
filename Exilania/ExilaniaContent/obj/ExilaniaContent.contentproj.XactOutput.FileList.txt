@@ -1,0 +1,3 @@
+Content\Sounds\ExilaniaAudio.xgs
+Content\Sounds\Stirkes.xwb
+Content\Sounds\Sound Bank.xsb

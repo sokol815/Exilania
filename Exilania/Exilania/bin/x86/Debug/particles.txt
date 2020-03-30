@@ -1,0 +1,131 @@
+#particle definitions file
+NAME:Wood Arrow
+PIC:RECT(1049,56,16,6)
+Travel:straight
+Gravity:true
+Speed:900
+NAME:Wood Bolt
+PIC:RECT(1066,56,16,6)
+Travel:straight
+Gravity:false
+Speed:1200
+NAME:Steel Arrow
+PIC:RECT(1049,65,16,6)
+Travel:straight
+Gravity:true
+Speed:1000
+NAME:Steel Bolt
+PIC:RECT(1066,65,16,6)
+Travel:straight
+Gravity:false
+Speed:1300
+NAME:Bronze Ball
+PIC:RECT(1083,55,8,8)
+Travel:straight
+Gravity:false
+Speed:900
+NAME:Steel Ball
+PIC:RECT(1083,64,8,8)
+Travel:straight
+Gravity:false
+Speed:1000
+NAME:Ninja Star
+PIC:RECT(1049,72,16,16)
+Travel:straight
+Gravity:true
+Speed:700
+NAME:Throwing Dagger
+PIC:RECT(1066,72,16,16)
+Travel:straight
+Gravity:true
+Speed:700
+NAME:Bullet
+PIC:RECT(1093,57,34,5)
+Travel:straight
+Gravity:false
+Speed:1250
+NAME:Plasma Boomerang
+PIC:RECT(1108,63,9,27)
+Travel:boomerang
+Gravity:false
+Speed:700
+NAME:Snow Flake
+PIC:RECT(1049,46,8,8)
+Travel:Graceful
+Gravity:true
+speed:300
+NAME:Blue Laser
+PIC:RECT(1049,89,15,15)
+Travel:Straight
+Gravity:false
+Speed:1100
+NAME: Red Laser
+PIC:RECT(1065,89,15,15)
+Travel:Straight
+Gravity:false
+Speed:1050
+NAME: Green Laser
+PIC:RECT(1081,89,15,15)
+Travel:Straight
+Gravity:false
+Speed:1150
+NAME: ParticleA
+PIC:RECT(1058,46,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:10
+NAME: ParticleB
+PIC:RECT(1060,46,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:12
+NAME: ParticleC
+PIC:RECT(1062,46,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:20
+NAME: ParticleD
+PIC:RECT(1058,48,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:15
+NAME: ParticleE
+PIC:RECT(1060,48,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:9
+NAME: ParticleF
+PIC:RECT(1062,48,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:18
+NAME: ParticleG
+PIC:RECT(1058,50,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:30
+NAME: ParticleH
+PIC:RECT(1060,50,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:21
+NAME: ParticleI
+PIC:RECT(1062,50,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:15
+NAME: ParticleJ
+PIC:RECT(1058,52,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:18
+NAME: ParticleK
+PIC:RECT(1060,52,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:23
+NAME: ParticleL
+PIC:RECT(1062,52,2,2)
+Travel:Haphazard
+Gravity:false
+Speed:13

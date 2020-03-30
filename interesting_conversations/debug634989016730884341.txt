@@ -1,0 +1,168 @@
+The below is a transcript between myself (You,Badabing!) and Steven Billings (Mind Boggle) taken from a testing session on  3/15/13 in the hour before 1am.
+
+
+World Write Time (1)AVG:     74 MSEC. 
+You: heyo!
+@05Mind Boggle@00: Wow, pretty cool!
+You: so, super capacitors can send power instantly, but batteries can only send 5 power  per tick
+@05Mind Boggle@00: Umm, what is up with my movement?
+You: are you paused?
+You: is it laggy or something?
+@05Mind Boggle@00: Laggy, I am moving right?
+You: yeah, you are
+You: what is your ping?
+@05Mind Boggle@00: 26
+You: 26 is the highest we have ever seen.
+@05Mind Boggle@00: and now down to 5
+You: any better?
+@05Mind Boggle@00: I think it would be helpful if the ping number turned yellow and red when it got really high
+You: did you try holding down q, yet?
+@05Mind Boggle@00: It is staying low
+@05Mind Boggle@00: I have
+You: not a bad idea.
+You: do you see the super-capacitor losing charge under the left solar array?
+You: hmm... you seem to have run off somewhere.
+@05Mind Boggle@00: Exploring the world, some funny things with water out here.
+You: yeah, that is definately true.
+You: there  are some really high mountains in this world
+@05Mind Boggle@00: So, what is the issue with top and bottom of world?
+You: this world is I think 2500 wide
+You: oh, no issue with the very top, but if you get to the very bottom of the world, 24000/960 becomes 25 insteaad of 24, so it goes outside of the hash table
+@05Mind Boggle@00: ping spiked to 22 just now
+You: interesting.
+You: our internet has been a little shakey lately.
+@05Mind Boggle@00: Low power?
+You: no, just the door wasnt programmed right
+@05Mind Boggle@00: Did I just go through rock on your screen?
+You: nope.
+@05Mind Boggle@00: Where am I now?
+You: did you somehow go through rock?
+@05Mind Boggle@00: Ping was back at 28 when I did that
+@05Mind Boggle@00: 37 ping!
+You: i may need to do some testing with the ping simulated at bad numbers
+You: (lidgren
+You: (lidgren can do that!)
+You: what is your updating speed at?
+@05Mind Boggle@00: Ok, but it looks like by me not communicating with the server fast enough, I am able to do things that should be impossible
+@05Mind Boggle@00: 4.2 constantly
+@05Mind Boggle@00: ping has no effect on it
+You: really, like what? go through walls?
+@05Mind Boggle@00: Ya, the walk through walls somehow
+You: oh!
+@05Mind Boggle@00: It seems like the doors somehow influenced the walking through walls
+You: i forgot to add the network code for creating connections
+@05Mind Boggle@00: So I cant make connections?
+You: you can on your side,  but I wont see them.
+You: just like you probably see the power capacitor that I am standing above as empty, right?
+@05Mind Boggle@00: Which power thing?
+You: those are normal lab lights that you placed, btw.
+You: over by where the doors used to be.
+You: i see this power capacitor at 65K, you probably see it at 0
+@05Mind Boggle@00: Yep, it is at 0
+@05Mind Boggle@00: What are the keys for making connections?
+You: click and drag from one furniture to another
+You: you will see a line going from the first furniture to your mouse until you hover over a furniture piece, then it snaps to it (until you hover off or release the click)
+You: i think the power situation is awesome, now.
+You: twas a good idea, mr. steven.
+@05Mind Boggle@00: It wont let it connect to your battery, is that on purpose, so it has to be my battery?
+You: drag from battery to light.
+You: you drag the power lines from source to sink
+@05Mind Boggle@00: Ah, high to low, got it
+@05Mind Boggle@00: Wow,  as you left, the lights all turned off, then they came back on for me
+@05Mind Boggle@00: 43 ping
+You: oh, that is quite interesting
+You: guess I havent tested them much with anyone else.
+You: we just have a bad connection.
+You: you could reconnect, that might fix it.
+@05Mind Boggle@00: Well, my internet here goes bad pretty often too.
+You: gotcha.
+You: i am going to add some info that pops up when you start linking furniture together. it will tell you how to go about doing it.
+@05Mind Boggle@00: sounds awesome
+You: hahaha, calm down there,  turbo.
+@05Mind Boggle@00: It was the ever popular destroy the world time
+You: glass foreground does not count as transparent, so you are making those solar panels inneffective.
+You: they just need 1 spot of no foreground tiles anywhere cardinally next to them and they will work.
+@05Mind Boggle@00: I actually wanted background
+You: i still think the glass looks really good.
+@05Mind Boggle@00: That is so  crazy, it is sometimes hard to tell where the glass is with the background there as well
+You: yeah, it is a bit.
+You: but when you move it becomes pretty obvious.
+@05Mind Boggle@00: What, left and right move the character at the same speed correct?
+You: yes.
+@05Mind Boggle@00: Do you check for left first?
+You: yup
+You: no, last
+@05Mind Boggle@00: this is me holding down left and right, do you get the same thing?
+You: yeah, moving slowly left, right?
+@05Mind Boggle@00: Correct
+You: in the code, if you have an inertia.x that is positive and you are trying to move left, it sets your inertia to speed *.1 * -1
+You: (max_speed * .1 * -1)
+@05Mind Boggle@00: So the right command gives you inertia, and the left then makes it a tenth of that to the left?
+You: the right command gives you + inertia, the left command sees inertia is positive and sets it to max_speed * -.1
+You: and then if inertia is already in the direction you want to go, it increases it until your max run speed
+You: did you notice how when you let go of left or right you still keep going for a bit afterwards?
+@05Mind Boggle@00: I can see that now.  Do I move smoothly through the door on your side?
+You: yes.
+@05Mind Boggle@00: Ok, because here I am teleporting
+You: that is because you did not hook power up to the door on your end.
+You: i hooked it up here, so the server says the door is opening
+@05Mind Boggle@00: Ah, so this will be fixed when connections are communicated
+You: yup.
+@05Mind Boggle@00: Bouncing?
+You: i like this glass power  station.
+You: i am bouncing?
+@05Mind Boggle@00: No, my character is, am I on the top or second from top?
+You: no, looks like your moues is... is your charaacter moving at all on your side?
+You: you are on the top.
+@05Mind Boggle@00: he is jumping up and down next to that light
+You: here?
+@05Mind Boggle@00: right there
+You: on the server you are 1 level higher
+@05Mind Boggle@00: But I am on the top floor? oh no
+You: i still need to come up with a good solution for correcting position when it is like that.
+@05Mind Boggle@00: Ah, it came from moving left when I went down the platform
+@05Mind Boggle@00: I  reproduced it now
+@05Mind Boggle@00: THis is funny
+Server: Status changed: Remotely requested connect
+Server: Status changed: Connected to 194844AB7153FE8F
+Server: Unhandled type: DebugMessage Initiated average roundtrip time to 1.22 ms Remote time is: 0.0656734481453896
+WRITING world to File.
+World Write Time (1)AVG:     74 MSEC. 
+@05Mind Boggle@00: Nice, another character
+@05Mind Boggle@00: You did it?
+@05badabing!@00: nope, unable to.
+@05badabing!@00: need to try more!
+@05Mind Boggle@00: He is  bouncing on my side
+@05badabing!@00: interesting... try jumping when you do it.
+@05Mind Boggle@00: I got it again
+@05Mind Boggle@00: I had to go part way through a block
+@05badabing!@00: i did it!
+@05Mind Boggle@00: Oh, now that is interesting
+@05badabing!@00: i quite agree.
+@05Mind Boggle@00: I saw you fall through the glass on my side
+@05badabing!@00: yeah, me too.
+@05badabing!@00: haha
+@05badabing!@00: ok, running start then jump at the middle, that will do it.
+@05badabing!@00: now i am bouncing like a tigger
+@05Mind Boggle@00: Am I on the bottom floor?
+@05badabing!@00: yeah.
+@05badabing!@00: ok, even  better just jump barely high enough to not reach the next level. watch what happens
+@05Mind Boggle@00: Ok, time to double check some more code.  Thanks for letting me try some new things out
+@05badabing!@00: no running jump needed
+@05Mind Boggle@00: Just got bouncing again, nothing too crazy
+@05badabing!@00: hmm... the client sees you bouncing, but the server doesnt.
+@05badabing!@00: maybe I should let clients determine their position, too?
+@05badabing!@00: that might open up a whole can of worms, though.
+@05Mind Boggle@00: Must be some sync that needs to be performed
+@05Mind Boggle@00: I wonder what different message the client gets here.
+@05Mind Boggle@00: well,  good luck.
+@05badabing!@00: the problem is the server is passing the position you gave it through to everyone else, not the servers version.
+Server: Status changed: You have been successfully logged off.
+Server: Status changed: You have been successfully logged off.
+Server: Status changed: You have been successfully logged off.
+Server: Status changed: You have been successfully logged off.
+WRITING world to File.
+World Write Time (1)AVG:     75 MSEC. 
+Server: Status changed: You have been successfully logged off.
+Client: Status changed: You have been successfully logged off.
+Server: Status changed: You have been successfully logged off.

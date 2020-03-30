@@ -1,0 +1,160 @@
+Open the document
+Block 'Grey Brick' Loaded.
+Block 'Green Brick' Loaded.
+Block 'Blue Brick' Loaded.
+Block 'Yellow Brick' Loaded.
+Block 'Orange Brick' Loaded.
+Block 'Red Brick' Loaded.
+Block 'Purple Brick' Loaded.
+Block 'Pink Brick' Loaded.
+Block 'Dark Brick' Loaded.
+Block 'Dirt' Loaded.
+Block 'Stone' Loaded.
+Block 'Mettite' Loaded.
+Block 'Grass' Loaded.
+Block 'Wood Platform' Loaded.
+Block 'Water' Loaded.
+Block 'Concrete' Loaded.
+Block 'Glass' Loaded.
+Block 'Wood' Loaded.
+Block 'Gun Steel' Loaded.
+Block 'Hematite' Loaded.
+Block 'Sand' Loaded.
+Block 'Torch' Loaded.
+Block 'Sand Stone' Loaded.
+Block 'Rosy Glass' Loaded.
+Block 'Blueprinting Block' Loaded.
+Block 'Snow' Loaded.
+Item Piece 'Long Wood Handle' Loaded.
+Item Piece 'Short Wood Handle' Loaded.
+Item Piece 'Hammer Head' Loaded.
+Item Piece 'Heavy Hammer Head' Loaded.
+Item Piece 'Pick-Axe Head' Loaded.
+Item Piece 'Axe Head' Loaded.
+Item Piece 'Gun Handle' Loaded.
+Item Piece 'Assault-Gun Handle' Loaded.
+Furniture Item 'Wood Door' Loaded.
+Furniture Item 'Painting' Loaded.
+Furniture Item 'Chest' Loaded.
+Furniture Item 'Draw Bridge' Loaded.
+Furniture Item 'Mark 10 Battery' Loaded.
+Furniture Item 'Metal Door' Loaded.
+Furniture Item 'Lab Light' Loaded.
+Furniture Item 'Solar Panel' Loaded.
+Furniture Item 'Super Capacitor' Loaded.
+Furniture Item 'Utility Light' Loaded.
+Furniture Item 'Metal Hatch' Loaded.
+Furniture Item 'Furnace' Loaded.
+Furniture Item 'Anvil' Loaded.
+Furniture Item 'Liquid Pump' Loaded.
+Furniture Item 'Liquid Outlet' Loaded.
+Furniture Item 'Transporter Pad' Loaded.
+Furniture Item 'Banner' Loaded.
+Furniture Item 'Wheel' Loaded.
+Furniture Item 'Console' Loaded.
+Furniture Item 'Combustion Engine' Loaded.
+Plant Item 'Tree' Loaded.
+Plant Item 'Sapling' Loaded.
+Plant Item 'Vine' Loaded.
+Plant Item 'Red Posy' Loaded.
+Plant Item 'Desert Flower' Loaded.
+Plant Item 'Cotton Seedling' Loaded.
+Plant Item 'Cotton Plant' Loaded.
+Plant Item 'Mature Cotton' Loaded.
+Crafting Material Item 'Red Dye' Loaded.
+Crafting Material Item 'Tree Seed' Loaded.
+Crafting Material Item 'Vine Rope' Loaded.
+Crafting Material Item 'Chemicals' Loaded.
+Crafting Material Item 'Iron Ingot' Loaded.
+Crafting Material Item 'Seeded Cotton' Loaded.
+Crafting Material Item 'Cotton Seeds' Loaded.
+Crafting Material Item 'Refined Cotton' Loaded.
+Crafting Material Item 'Computer Board' Loaded.
+Crafting Recipe 'Grey Brick' Loaded.
+Crafting Recipe 'Red Brick' Loaded.
+Crafting Recipe 'Refined Cotton' Loaded.
+Crafting Recipe 'Wood Platform' Loaded.
+Crafting Recipe 'Chemicals' Loaded.
+Crafting Recipe 'Iron Ingot' Loaded.
+Crafting Recipe 'Glass' Loaded.
+Crafting Recipe 'Rosy Glass' Loaded.
+Crafting Recipe 'Torch' Loaded.
+Crafting Recipe 'Concrete' Loaded.
+Crafting Recipe 'Gun Steel' Loaded.
+Crafting Recipe 'Sand Stone' Loaded.
+Crafting Recipe 'Computer Board' Loaded.
+Crafting Recipe 'Long Wood Handle' Loaded.
+Crafting Recipe 'Short Wood Handle' Loaded.
+Crafting Recipe 'Hammer Head' Loaded.
+Crafting Recipe 'Heavy Hammer Head' Loaded.
+Crafting Recipe 'Pick-Axe Head' Loaded.
+Crafting Recipe 'Axe Head' Loaded.
+Crafting Recipe 'Gun Handle' Loaded.
+Crafting Recipe 'Assault-Gun Handle' Loaded.
+Crafting Recipe 'Wood Door' Loaded.
+Crafting Recipe 'Painting' Loaded.
+Crafting Recipe 'Chest' Loaded.
+Crafting Recipe 'Draw Bridge' Loaded.
+Crafting Recipe 'Mark 10 Battery' Loaded.
+Crafting Recipe 'Metal Door' Loaded.
+Crafting Recipe 'Lab Light' Loaded.
+Crafting Recipe 'Solar Panel' Loaded.
+Crafting Recipe 'Super Capacitor' Loaded.
+Crafting Recipe 'Utility Light' Loaded.
+Crafting Recipe 'Metal Hatch' Loaded.
+Crafting Recipe 'Furnace' Loaded.
+Crafting Recipe 'Anvil' Loaded.
+Crafting Recipe 'Liquid Pump' Loaded.
+Crafting Recipe 'Liquid Outlet' Loaded.
+Crafting Recipe 'Transporter Pad' Loaded.
+Crafting Recipe 'Banner' Loaded.
+Crafting Recipe 'Wheel' Loaded.
+Crafting Recipe 'Console' Loaded.
+Crafting Recipe 'Combustion Engine' Loaded.
+Particle Template 'Wood Arrow' Loaded.
+Particle Template 'Wood Bolt' Loaded.
+Particle Template 'Steel Arrow' Loaded.
+Particle Template 'Steel Bolt' Loaded.
+Particle Template 'Bronze Ball' Loaded.
+Particle Template 'Steel Ball' Loaded.
+Particle Template 'Ninja Star' Loaded.
+Particle Template 'Throwing Dagger' Loaded.
+Particle Template 'Bullet' Loaded.
+Particle Template 'Plasma Boomerang' Loaded.
+Particle Template 'Snow Flake' Loaded.
+Particle Template 'Blue Laser' Loaded.
+Particle Template 'Red Laser' Loaded.
+Particle Template 'Green Laser' Loaded.
+Particle Template 'ParticleA' Loaded.
+Particle Template 'ParticleB' Loaded.
+Particle Template 'ParticleC' Loaded.
+Particle Template 'ParticleD' Loaded.
+Particle Template 'ParticleE' Loaded.
+Particle Template 'ParticleF' Loaded.
+Particle Template 'ParticleG' Loaded.
+Particle Template 'ParticleH' Loaded.
+Particle Template 'ParticleI' Loaded.
+Particle Template 'ParticleJ' Loaded.
+Particle Template 'ParticleK' Loaded.
+Particle Template 'ParticleL' Loaded.
+Client: Unhandled type: DebugMessage Socket bound to 0.0.0.0:50232: True
+Client: Unhandled type: DebugMessage Network thread started
+Server: Unhandled type: DebugMessage Socket bound to 0.0.0.0:50231: True
+Server: Unhandled type: DebugMessage Network thread started
+Client: Status changed: Connected to 4A030DA62C60547E
+Server: Status changed: Remotely requested connect
+Server: Status changed: Connected to 9B89C63C9A7A64C6
+Server: Unhandled type: DebugMessage Initiated average roundtrip time to 0.87 ms Remote time is: 0.18084829300642
+Client: Unhandled type: DebugMessage Initiated average roundtrip time to 0.88 ms Remote time is: 0.180956959724426
+Loading World: Read a total of 1603 lines from file.
+Finished reading from the file. 19685 Bytes?
+Client sending player chosen to server.
+WRITING world to File.
+World Write Time AVG:      4 MSEC. 
+Finished writing to the file. 19693 Bytes?
+Server: Status changed: You have been successfully logged off.
+WRITING world to File.
+World Write Time AVG:      4 MSEC. 
+Finished writing to the file. 19693 Bytes?
+Client: Status changed: You have been successfully logged off.
+Server: Status changed: You have been successfully logged off.

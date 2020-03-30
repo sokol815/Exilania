@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
+  <Asset Type="Pipeline:BuildItemCollection">
+    <Item>
+      <Source>Exilania.png</Source>
+      <Name>Exilania</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Exilania.xnb</Output>
+      <Time>2013-09-22T23:55:41.8570992-06:00</Time>
+    </Item>
+    <Item>
+      <Source>planet8152012.png</Source>
+      <Name>planet8152012</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\planet8152012.xnb</Output>
+      <Time>2013-02-17T00:14:24.6123048-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Exilaniatitle.png</Source>
+      <Name>Exilaniatitle</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Exilaniatitle.xnb</Output>
+      <Time>2013-04-05T17:33:06.8176561-06:00</Time>
+    </Item>
+    <Item>
+      <Source>pointlights.png</Source>
+      <Name>pointlights</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\pointlights.xnb</Output>
+      <Time>2013-02-19T11:20:21.4252415-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Corbel_Big.spritefont</Source>
+      <Name>Corbel_Big</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Corbel_Big.xnb</Output>
+      <Time>2013-02-03T22:41:42.9752026-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Constantia_twenty.spritefont</Source>
+      <Name>Constantia_twenty</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Constantia_twenty.xnb</Output>
+      <Time>2013-01-29T09:53:44.9722187-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Lucida_Tiny.spritefont</Source>
+      <Name>Lucida_Tiny</Name>
+      <Importer>FontDescriptionImporter</Importer>
+      <Processor>FontDescriptionProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Lucida_Tiny.xnb</Output>
+      <Time>2013-04-10T12:14:33.0257503-06:00</Time>
+    </Item>
+    <Item>
+      <Source>LightShader.fx</Source>
+      <Name>LightShader</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\LightShader.xnb</Output>
+      <Time>2013-02-17T14:04:41.6094997-07:00</Time>
+    </Item>
+    <Item>
+      <Source>None.fx</Source>
+      <Name>None</Name>
+      <Importer>EffectImporter</Importer>
+      <Processor>EffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\None.xnb</Output>
+      <Time>2013-02-16T23:26:39.2404149-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\hit.wav</Source>
+      <Name>Sounds\hit</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\hit.xnb</Output>
+      <Time>2013-02-21T20:40:35.9664615-07:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\finish_hit.wav</Source>
+      <Name>Sounds\finish_hit</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\finish_hit.xnb</Output>
+      <Time>2013-02-21T21:06:25.8621104-07:00</Time>
+    </Item>
+    <Item>
+      <Source>background.png</Source>
+      <Name>background</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\background.xnb</Output>
+      <Time>2013-09-02T01:08:53.2285761-06:00</Time>
+    </Item>
+    <Item>
+      <Source>Sounds\door_change.wav</Source>
+      <Name>Sounds\door_change</Name>
+      <Importer>WavImporter</Importer>
+      <Processor>SoundEffectProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\Sounds\door_change.xnb</Output>
+      <Time>2013-09-06T21:56:58.7059697-06:00</Time>
+    </Item>
+    <BuildSuccessful>true</BuildSuccessful>
+    <Settings>
+      <TargetPlatform>Windows</TargetPlatform>
+      <TargetProfile>Reach</TargetProfile>
+      <BuildConfiguration>Debug</BuildConfiguration>
+      <CompressContent>false</CompressContent>
+      <RootDirectory>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\ExilaniaContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\ExilaniaContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Exilania\Exilania\Exilania\bin\x86\Debug\Content\</OutputDirectory>
+    </Settings>
+    <Assemblies>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.XImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.VideoImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.TextureImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.FBXImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.EffectImporter.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Program Files (x86)\Microsoft XNA\XNA Game Studio\v4.0\References\Windows\x86\Microsoft.Xna.Framework.Content.Pipeline.AudioImporters.dll</Key>
+        <Value>2010-08-23T12:41:18-06:00</Value>
+      </Assembly>
+      <Assembly>
+        <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
+        <Value>2012-09-16T20:44:44.2969546-06:00</Value>
+      </Assembly>
+    </Assemblies>
+  </Asset>
+</XnaContent>

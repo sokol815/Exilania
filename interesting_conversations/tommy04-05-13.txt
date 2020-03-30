@@ -1,0 +1,78 @@
+Never tell your password to anyone.
+Sunday, March 31, 2013
+sokol815: Heyo!
+sokol815: you enjoying having matt there?
+331agentblue: hi-dee-doo, and yes
+sokol815: just changed the name of my game to "Exilania" and I have a website! http://exilania.com/
+331agentblue: That's awesome! Also Greg, do you about Steam Greenlight?
+sokol815: yes, I have heard a bit about it.
+sokol815: thinking of joining it in a couple of weeks when I have more content to share
+331agentblue: So you are planning on putting Exilania on it
+sokol815: i hope to!
+331agentblue: I know I'll vote for it
+sokol815: I am also going to put it onto desura and indiedb
+sokol815: gotta start doing social media stuff with it.
+331agentblue: I haven't heard of those
+sokol815: desura is basically like steam.
+331agentblue: ok
+331agentblue: What about indiedb?
+sokol815: it is basically just a listing site of indie games, you can also have updates on indiedb and such.
+sokol815: just like an info about this game thing.
+331agentblue: Fun!
+sokol815: have you had a chance to try out the new version of the game I sent ya?
+sokol815: this is the link to the newest one (released 2 days ago!)
+sokol815: https://www.dropbox.com/s/eu1t04wejbpcru0/Euthenia_0.02.zip
+331agentblue: Yes I tried it using the save that was on it when you sent it to me
+sokol815: very cool.
+sokol815: this new one has awesome water mechanics, I recommend checking them out!
+sokol815: (you can generate water by pressing F1)
+sokol815: (at least generate it in your inventory)
+331agentblue: Ooh
+331agentblue: what's different about the water mechanics?
+sokol815: it always works across the entire game, and the pressure works really well.
+331agentblue: Did it not work before?
+sokol815: it did, but only in the near vicinity of the player.
+sokol815: also, sand is really fun to play with.
+331agentblue: That's true, I remember tunneling and then going up and having water fall on me
+331agentblue: we have sand?!
+sokol815: totally, dude.
+sokol815: in the world_creation_properties.txt file, you can change "BaseGround:Dirt" to "BaseGround:Sand", then the new world you generate will be filled with sand, instead!
+331agentblue: that will cause problems with caves..., and literally make the game a sandbox
+331agentblue: could that be done with water?
+sokol815: trying to fill the world with water right now would be very problematic, I don't think it would ever finish generating, but it will be possible in the future!
+sokol815: but you could do it with any other block in the blocks.txt file
+331agentblue: fun, so a rare mineral becomes abundant
+sokol815: haha, yes.
+331agentblue: can we chop trees?
+sokol815: in fact, there are things in the world generation file that control the distribution of all minerals, so you can change those all up.
+sokol815: yup! and after you chop it down, you can use those materials and start crafting basic objects.
+331agentblue: we have crafting?!
+sokol815: yeah dude, in the inventory menu.
+331agentblue: nice!
+331agentblue: any change in the formats?
+331agentblue: as in layout
+sokol815: not too much
+331agentblue: will there be?
+sokol815: yeah
+331agentblue: i'm intrigued
+331agentblue: we'll eventually be able to make portals right?
+sokol815: transporters
+331agentblue: will they do essentially the same thing?
+sokol815: yeah
+331agentblue: okay
+sokol815: i might make it so you can setup a mobile transporter, so that you can be transported back to base whenver you need to be.
+sokol815: the further away you are, the longer you will have to stand still so it can get a lock on you.
+331agentblue: like a sender andreceiver?
+sokol815: yeah.
+331agentblue: interesting concept
+sokol815: you can boost your signal, too.
+331agentblue: so we have steel?
+sokol815: yup!
+331agentblue: could one make an electric sword?
+sokol815: yeah!
+331agentblue: sweet!
+sokol815: I'm still working out just how that will work.
+331agentblue: all the different damages
+331agentblue: can you gmail chat me? Karen wants me downstairs
+sokol815: sure.
+331agentblue: Thanks Bro.

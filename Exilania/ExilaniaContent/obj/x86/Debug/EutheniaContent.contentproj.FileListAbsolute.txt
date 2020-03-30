@@ -1,0 +1,2 @@
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Euthenia\Euthenia\EutheniaContent\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Goodlookers\Documents\Visual Studio 2010\Projects\Euthenia\Euthenia\EutheniaContent\obj\x86\Debug\Sounds\EutheniaAudio.xml

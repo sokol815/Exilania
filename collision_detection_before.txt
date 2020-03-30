@@ -1,0 +1,111 @@
+ Vector2 top_left = new Vector2(world_loc.X + bounding_box.X + (inertia.X * sec_fraction), world_loc.Y + bounding_box.Y + (inertia.Y * sec_fraction));
+            Vector2 bottom_right = new Vector2(world_loc.X - bounding_box.X + (inertia.X * sec_fraction), world_loc.Y - bounding_box.Y + (inertia.Y * sec_fraction));
+            //Euthenia.debug = "@00Top Left: " + top_left.ToString() + " Bottom Right: " + bottom_right.ToString();
+            Point run_into = new Point();
+            float check_left_right_offset = 7f;
+            Point return_to;
+            /*
+            //check below
+            if (is_point_occupied(new Vector2(top_left.X + 2f, bottom_right.Y + 2f), w, out run_into ) ||
+                is_point_occupied(new Vector2(bottom_right.X - 2f, bottom_right.Y + 2f), w, out run_into) ||
+                is_point_occupied(new Vector2(bottom_right.X - (bounding_box.Width / 2f), bottom_right.Y + 2f), w, out run_into))
+            {
+                if (inertia.Y > 0)
+                {
+                    if (inertia.Y * sec_fraction + world_loc.Y - bounding_box.Y >= run_into.Y * 24f - 1f)
+                    {
+                        inertia.Y = 0;
+                        world_loc.Y = (float)run_into.Y * 24f + bounding_box.Y - 2f;
+                    }
+                    if(!input.pressed_keys.Contains(' '))
+                    jumping = 0;
+                }
+            }
+            else
+            {
+                if (jumping == 0 && !jump_reuse)
+                    jumping = jump_fuel;
+                foot_state = 0;
+            }
+            //check above
+            if (is_not_platform_point_occupied(new Vector2(top_left.X + 2f, top_left.Y - 2f), w, out run_into)
+                || is_not_platform_point_occupied(new Vector2(bottom_right.X - 2f, top_left.Y - 2f), w, out run_into)
+                || is_not_platform_point_occupied(new Vector2(bottom_right.X - (bounding_box.Width / 2f), top_left.Y - 2f), w, out run_into))
+            {
+                if (inertia.Y < 0)
+                {
+                    inertia.Y = 0;
+                    //world_loc.Y = (float)(run_into.Y) * 24f - bounding_box.Y + 18f;
+                }
+            }
+            else if(inertia.Y < 0)
+                foot_state = 0;
+
+            top_left = new Vector2(world_loc.X + bounding_box.X + (inertia.X * sec_fraction), world_loc.Y + bounding_box.Y + (inertia.Y * sec_fraction));
+            bottom_right = new Vector2(world_loc.X - bounding_box.X + (inertia.X * sec_fraction), world_loc.Y - bounding_box.Y + (inertia.Y * sec_fraction));
+            int height_char = (int)Math.Ceiling(((float)bounding_box.Height) / 24f);
+            int width_char = (int)Math.Ceiling(((float)bounding_box.Width) / 24f);
+
+            //check left
+            if (is_not_platform_point_occupied(new Vector2(top_left.X, top_left.Y + check_left_right_offset), w, out run_into) ||
+                is_not_platform_point_occupied(new Vector2(top_left.X, bottom_right.Y - (bounding_box.Height / 2f)), w, out run_into))
+            {
+                if (inertia.X < 0)
+                {
+                    inertia.X = 0;
+                }
+            }
+            else if (is_not_platform_point_occupied(new Vector2(top_left.X, bottom_right.Y - check_left_right_offset), w, out run_into))
+            { //there is something in our way under foot ahead... jump ontop of it.
+                return_to = run_into;
+                bool works = true;
+                for (int x = 0; x <= width_char; x++)
+                {
+                    if (!w.map[w.wraparound_x(return_to.X + x), return_to.Y - height_char].passable)
+                        works = false;
+                }
+                if (works && inertia.X < 0)
+                {
+                    world_loc.Y -= 10f;
+                    inertia.X = inertia.X * .80f;
+                    //world_loc.X -= 1f;
+                }
+                else if (inertia.X < 0)
+                {
+                    inertia.X = 0;
+                    world_loc.X = (float)(return_to.X) * 24f - bounding_box.X + 24f;
+                }
+            }
+            //check right
+            if (is_not_platform_point_occupied(new Vector2(bottom_right.X, top_left.Y + check_left_right_offset), w, out run_into) ||
+                is_not_platform_point_occupied(new Vector2(bottom_right.X, bottom_right.Y - (bounding_box.Height / 2f)), w, out run_into))
+            {
+                if (inertia.X > 0)
+                {
+                    inertia.X = 0;
+                }
+            }
+            else if (is_not_platform_point_occupied(new Vector2(bottom_right.X, bottom_right.Y - check_left_right_offset), w, out run_into))
+            {
+                return_to = run_into;
+                //now check points 
+                bool works = true;
+                for (int x = 0; x <= width_char; x++)
+                {
+                    if (!w.map[w.wraparound_x(return_to.X - x), return_to.Y - height_char].passable)
+                        works = false;
+                }
+                if (works && inertia.X > 0)
+                {
+                    world_loc.Y -= 10f;
+                    inertia.X = inertia.X * .80f;
+                    //world_loc.X += 1f;
+                }
+                else if (inertia.X > 0)
+                {
+                    inertia.X = 0;
+                    world_loc.X = (float)(return_to.X) * 24f + bounding_box.X;
+                }
+            }
+          
+            */

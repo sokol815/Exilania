@@ -1,0 +1,46 @@
+NAME:Red Dye
+Worth:10
+Image: 658
+Text: Made from the petals of the posy, perfect for making colored anything!
+
+Name:Tree Seed
+Worth:2
+Image: 659
+Text: Plant these and you will have a great tree in no time!
+Action: PLANT(Sapling)
+
+Name:Vine Rope
+Worth:10
+Image:693
+Text: Used to make all sorts of useful objects, seems strong enough to hold my weight...
+
+NAME:Chemicals
+Worth:10
+Image: 626
+Text: Highly Reactive Chemicals used in industrial processes.
+
+NAME:Iron Ingot
+Worth:30
+Image: 627
+Text: Refined from Hematite ore, ready for use.
+
+NAME:Seeded Cotton
+Worth:10
+Image: 275
+Text: Raw, unprocessed Cotton. Still has the seeds in it.
+
+NAME:Cotton Seeds
+Worth:2
+Image:276
+Text: Plant on Dirt to begin growing Cotton plants.
+Action: PLANT(Cotton Seedling)
+
+NAME:Refined Cotton
+Worth:10
+Image:274
+Text: This cotton has been put through a cotton gin. It is ready to be used.
+
+NAME:Computer Board
+Worth:50
+Image:857
+Text: This Computer Board is used to make Functioning electronic devices.

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Sections>
+  <WaveBank Name="Stirkes">Wave Bank
+{
+    Name = Stirkes;
+    Xbox File = Xbox\Stirkes.xwb;
+    Windows File = Win\Stirkes.xwb;
+    Xbox Bank Path Edited = 0;
+    Windows Bank Path Edited = 0;
+    Seek Tables = 1;
+    Compression Preset Name = &lt;none&gt;;
+    Bank Last Revised Low = 3300851288;
+    Bank Last Revised High = 30281910;
+
+    Wave
+    {
+        Name = finish_hit;
+        File = finish_hit.wav;
+        Build Settings Last Modified Low = 1669177962;
+        Build Settings Last Modified High = 30281910;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 44;
+            Play Region Length = 7008;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 4223042224;
+            Last Modified High = 30281905;
+        }
+    }
+
+    Wave
+    {
+        Name = hit;
+        File = hit.wav;
+        Build Settings Last Modified Low = 1669177962;
+        Build Settings Last Modified High = 30281910;
+
+        Cache
+        {
+            Format Tag = 0;
+            Channels = 2;
+            Sampling Rate = 44100;
+            Bits Per Sample = 1;
+            Play Region Offset = 106;
+            Play Region Length = 42672;
+            Loop Region Offset = 0;
+            Loop Region Length = 0;
+            File Type = 1;
+            Last Modified Low = 1608987623;
+            Last Modified High = 30281902;
+        }
+    }
+}
+
+</WaveBank>
+</Sections>
